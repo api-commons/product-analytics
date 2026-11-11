@@ -7,9 +7,9 @@ concepts:
     path_segment:
     - track
     properties:
-      user_id: user_id
       properties: properties
       timestamp: timestamp
+      user_id: user_id
     core_coverage: 0.0
     evidence:
     - openapi/_original/heap-openapi.yml#POST /api/track

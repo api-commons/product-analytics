@@ -16,7 +16,7 @@ generated. Every number below is a count of providers.
 | profile | 15 | 13 | traits 62%, user_id 54% | identify 6, profiles 4, people 2, profile 2 |
 | cohort | 14 | 12 | id 75%, name 75%, description 67%, created_at 58% | segments 9, cohorts 2, segment 2, cohort 2 |
 | dashboard | 4 | 3 | id 100%, name 100% | dashboards 3, dashboard 2 |
-| funnel | 7 | 6 | name 50% | funnels 4, funnel 3 |
+| funnel | 7 | 6 | name 67%, id 50% | funnels 4, funnel 3 |
 
 Cohort: 80 providers with harvested OpenAPI, 40 crosswalks. Of the providers exposing a event: 75% create, 40% list, 25% fetch, 2% update, 8% delete. Generated 2026-11-10 by build.py.
 <!-- /commons:summary -->

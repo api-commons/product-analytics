@@ -8,13 +8,13 @@ concepts:
     - events
     - batch
     properties:
-      user_id:
-      - externalId
-      - personId
       properties: properties
       timestamp:
       - timestamp
       - receivedAt
+      user_id:
+      - externalId
+      - personId
       id: eventId
       name: name
     core_coverage: 0.0

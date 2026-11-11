@@ -8,7 +8,6 @@ concepts:
     - events
     - track
     properties:
-      user_id: userId
       properties:
       - properties
       - context
@@ -17,6 +16,7 @@ concepts:
       - receivedAt
       - sentAt
       - originalTimestamp
+      user_id: userId
       id: messageId
       type: type
       anonymous_id: device_id

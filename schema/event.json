@@ -5,11 +5,38 @@
   "description": "The common event in Product Analytics, distilled from 35 providers' own OpenAPI. Each property records the share of them that declare it.",
   "type": "object",
   "properties": {
+    "properties": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.457,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "properties",
+        "context",
+        "traits",
+        "attributes",
+        "props"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.4,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "timestamp",
+        "receivedAt",
+        "sentAt",
+        "ts",
+        "originalTimestamp",
+        "event_time"
+      ]
+    },
     "user_id": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.429,
-      "x-commons-providers": 15,
+      "x-commons-share": 0.4,
+      "x-commons-providers": 14,
       "x-commons-spellings": [
         "userId",
         "user_id",
@@ -19,31 +46,6 @@
         "user",
         "distinct_id",
         "distinctId"
-      ]
-    },
-    "properties": {
-      "type": "object",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.4,
-      "x-commons-providers": 14,
-      "x-commons-spellings": [
-        "properties",
-        "context",
-        "traits",
-        "props"
-      ]
-    },
-    "timestamp": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.371,
-      "x-commons-providers": 13,
-      "x-commons-spellings": [
-        "timestamp",
-        "receivedAt",
-        "sentAt",
-        "ts",
-        "originalTimestamp"
       ]
     },
     "id": {
@@ -65,8 +67,8 @@
       "x-commons-spellings": [
         "name",
         "event_name",
-        "title",
-        "eventName"
+        "eventName",
+        "title"
       ]
     },
     "type": {
@@ -81,8 +83,8 @@
     "anonymous_id": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.229,
-      "x-commons-providers": 8,
+      "x-commons-share": 0.2,
+      "x-commons-providers": 7,
       "x-commons-spellings": [
         "device_id",
         "anonymousId",

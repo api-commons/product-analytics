@@ -57,10 +57,33 @@ concepts:
       share: 0.025
       tier: long-tail
     properties:
+    - name: properties
+      tier: extended
+      providers: 16
+      share: 0.457
+      type: object
+      spellings:
+      - properties
+      - context
+      - traits
+      - attributes
+      - props
+    - name: timestamp
+      tier: extended
+      providers: 14
+      share: 0.4
+      type: string
+      spellings:
+      - timestamp
+      - receivedAt
+      - sentAt
+      - ts
+      - originalTimestamp
+      - event_time
     - name: user_id
       tier: extended
-      providers: 15
-      share: 0.429
+      providers: 14
+      share: 0.4
       type: string
       spellings:
       - userId
@@ -71,27 +94,6 @@ concepts:
       - user
       - distinct_id
       - distinctId
-    - name: properties
-      tier: extended
-      providers: 14
-      share: 0.4
-      type: object
-      spellings:
-      - properties
-      - context
-      - traits
-      - props
-    - name: timestamp
-      tier: extended
-      providers: 13
-      share: 0.371
-      type: string
-      spellings:
-      - timestamp
-      - receivedAt
-      - sentAt
-      - ts
-      - originalTimestamp
     - name: id
       tier: extended
       providers: 12
@@ -109,8 +111,8 @@ concepts:
       spellings:
       - name
       - event_name
-      - title
       - eventName
+      - title
     - name: type
       tier: extended
       providers: 9
@@ -120,24 +122,25 @@ concepts:
       - type
     - name: anonymous_id
       tier: extended
-      providers: 8
-      share: 0.229
+      providers: 7
+      share: 0.2
       type: string
       spellings:
       - device_id
       - anonymousId
       - deviceId
-    long_tail_count: 208
+    long_tail_count: 218
     long_tail_sample:
     - created_at
     - status
+    - session_id
     - event_type
     - referrer
-    - session_id
     - client_id
     - email
     - hostname
     - ip
+    - action
     - description
     - device
     - error
@@ -152,20 +155,19 @@ concepts:
     - screen_height
     - screen_width
     - user_agent
-    - user_attributes
     - accept_language
     - account_id
-    - action
-    - actions
     - aid
     - api_key
     - api_keys
     - app_id
     - app_instance_id
+    - app_version
     - application_info
     - attribution_info
     - average_duration_seconds
     - average_occurrence_per_visitor
+    - b_id
     - batch_context
     - batch_id
     - bcc
@@ -441,7 +443,7 @@ concepts:
       type: array
       spellings:
       - tags
-    long_tail_count: 115
+    long_tail_count: 112
     long_tail_sample:
     - deleted
     - groups
@@ -463,7 +465,6 @@ concepts:
     - category
     - cohort_type
     - confidence
-    - content
     - create_in_folder
     - create_static_person_ids
     - created_by
@@ -483,6 +484,7 @@ concepts:
     - first_seen
     - forward_datemath
     - identities
+    - includes
   dashboard:
     segments_seen:
       dashboards: 3
@@ -602,14 +604,21 @@ concepts:
     properties:
     - name: name
       tier: core
+      providers: 4
+      share: 0.667
+      type: string
+      spellings:
+      - name
+    - name: id
+      tier: core
       providers: 3
       share: 0.5
       type: string
       spellings:
-      - name
-    long_tail_count: 17
+      - id
+      - uuid
+    long_tail_count: 15
     long_tail_sample:
-    - id
     - computation
     - created_at
     - description
@@ -620,7 +629,6 @@ concepts:
     - ok
     - order_by
     - page_size
-    - pagination
     - parameters
     - properties
     - search

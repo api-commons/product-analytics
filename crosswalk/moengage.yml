@@ -8,9 +8,8 @@ concepts:
     - event
     - events
     properties:
-      user_id: customer_id
-      type: type
-      anonymous_id: device_id
+      properties: attributes
+      timestamp: event_time
     core_coverage: 0.0
     evidence:
     - openapi/_original/moengage-data-openapi.yml#POST /event/{Workspace_ID}

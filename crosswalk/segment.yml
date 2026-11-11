@@ -8,12 +8,12 @@ concepts:
     - track
     - events
     properties:
-      user_id: userId
       properties:
       - properties
       - context
       - traits
       timestamp: timestamp
+      user_id: userId
       id: messageId
       type: type
       anonymous_id: anonymousId

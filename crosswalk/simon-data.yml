@@ -7,12 +7,12 @@ concepts:
     path_segment:
     - collect
     properties:
-      user_id: userId
       properties:
       - context
       - traits
       - properties
       timestamp: sentAt
+      user_id: userId
       type: type
     core_coverage: 0.0
     evidence:

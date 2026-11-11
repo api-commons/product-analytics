@@ -7,11 +7,11 @@ concepts:
     path_segment:
     - track
     properties:
-      user_id: userId
       properties:
       - properties
       - context
       timestamp: timestamp
+      user_id: userId
       anonymous_id: anonymousId
     core_coverage: 0.0
     evidence:

@@ -560,14 +560,18 @@
     "properties": {
      "status": "string",
      "message": "string",
-     "type": "string",
-     "customer_id": "string",
-     "device_id": "string",
-     "user_identifiers": "object",
-     "actions": "array",
+     "action": "string",
+     "attributes": "object",
+     "platform": "string",
+     "moe_os_type": "string",
+     "app_version": "string",
+     "user_time": null,
+     "current_time": null,
+     "user_timezone_offset": "number",
      "req_id": "string",
-     "user_attributes": "object",
-     "user_timezone_offset": "integer"
+     "moe_event_uuid": "string",
+     "event_time": "integer",
+     "b_id": "string"
     },
     "evidence": [
      "openapi/_original/moengage-data-openapi.yml#POST /event/{Workspace_ID}",
@@ -911,19 +915,27 @@
      "GET item"
     ],
     "properties": {
-     "events": "array",
-     "totalCount": "number",
-     "pagination": "object",
-     "_links": "object",
      "id": "string",
      "name": "string",
      "categoryId": "string",
      "categoryName": "string",
+     "_links": "object",
      "totalOccurrence": "number",
      "uniqueVisitors": "number",
      "newVisitors": "number",
      "averageOccurrencePerVisitor": "number",
-     "occurrenceHistogram": "array"
+     "occurrenceHistogram": "array",
+     "visitorId": "string",
+     "sessionId": "string",
+     "properties": "array",
+     "duration": "number",
+     "startedAt": "string",
+     "pageUrl": "string",
+     "type": "string",
+     "value": null,
+     "sourceType": "string",
+     "eventName": "string",
+     "selector": "string"
     },
     "evidence": [
      "openapi/_original/smartlook-rest-api-openapi.yml#DELETE /api/v1/events/{eventId}",
@@ -1041,21 +1053,21 @@
      "startIndex": "integer",
      "totalPages": "integer",
      "totalResults": "integer",
+     "id": "string",
      "identifier": "string",
-     "profileId": "string",
      "state": "string",
-     "timeline": "array",
-     "validationErrors": "object",
+     "validationErrors": "array",
      "domainGroup": "string",
      "matching": "array",
      "permissionLevel": "string",
      "privacyLegislation": "string",
+     "profileId": "string",
      "properties": "array",
      "restriction": "object",
      "strategy": "string",
+     "timeline": "array",
      "triggerOnEventAdded": "boolean",
      "triggerOnPropertyChange": "boolean",
-     "id": "string",
      "creationDate": "string",
      "consentedObjectives": "array",
      "refusedObjectives": "array",
@@ -1560,10 +1572,6 @@
      "PUT item"
     ],
     "properties": {
-     "content": "array",
-     "totalElements": "integer",
-     "totalPages": "integer",
-     "numberOfElements": "integer",
      "id": "string",
      "name": "string",
      "description": "string",
@@ -1645,11 +1653,17 @@
      "GET collection"
     ],
     "properties": {
-     "itemsPerPage": "integer",
-     "segments": "array",
-     "startIndex": "integer",
-     "totalPages": "integer",
-     "totalResults": "integer"
+     "creationDate": "string",
+     "creator": "object",
+     "description": "string",
+     "id": "string",
+     "inverseOf": "string",
+     "inversedBy": "string",
+     "lastModifiedDate": "string",
+     "lastModifiedUser": "object",
+     "name": "string",
+     "profileCount": "integer",
+     "tags": "array"
     },
     "evidence": [
      "openapi/_original/blueconic-rest-api-v2-openapi.yml#GET /segments"
@@ -1894,8 +1908,8 @@
      "size": "integer",
      "table": "string",
      "withs_ql": "string",
-     "not_deleted": "array",
-     "segments": "array"
+     "reason": "string",
+     "segments": "object"
     },
     "evidence": [
      "openapi/_original/lytics-api-v1-openapi.json#DELETE /api/segment/{id}",
@@ -2061,7 +2075,9 @@
      "type": "string",
      "rules": "array",
      "tags": "array",
-     "createdTime": "integer"
+     "createdTime": "integer",
+     "targetValue": null,
+     "operator": "string"
     },
     "evidence": [
      "openapi/_original/statsig-console-api-openapi.yml#DELETE /segments/{id}",
@@ -2401,9 +2417,8 @@
      "GET item"
     ],
     "properties": {
-     "totalCount": "number",
-     "funnels": "array",
-     "pagination": "object",
+     "id": "string",
+     "name": "string",
      "_links": "object",
      "computation": "object",
      "funnel": "object"

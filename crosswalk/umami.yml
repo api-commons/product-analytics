@@ -49,7 +49,7 @@ concepts:
     - funnels
     properties:
       name: name
-    core_coverage: 1.0
+    core_coverage: 0.5
     evidence:
     - openapi/_original/umami-openapi.json#DELETE /api/websites/{websiteId}/funnels/{funnelId}
     - openapi/_original/umami-openapi.json#GET /api/websites/{websiteId}/funnels

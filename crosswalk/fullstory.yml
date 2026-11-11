@@ -8,9 +8,9 @@ concepts:
     - events
     - batch
     properties:
-      user_id: user
       properties: properties
       timestamp: timestamp
+      user_id: user
       id: id
       name: name
     core_coverage: 0.0
