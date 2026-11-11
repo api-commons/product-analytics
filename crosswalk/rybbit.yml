@@ -1,0 +1,15 @@
+provider: rybbit
+apis_io: https://apis.io/providers/rybbit/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - track
+    properties:
+      properties: properties
+      name: event_name
+      type: type
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/rybbit-openapi.yml#POST /api/track

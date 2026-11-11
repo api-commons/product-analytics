@@ -1,0 +1,25 @@
+provider: smartlook
+apis_io: https://apis.io/providers/smartlook/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/smartlook-rest-api-openapi.yml#DELETE /api/v1/events/{eventId}
+    - openapi/_original/smartlook-rest-api-openapi.yml#GET /api/v1/events
+    - openapi/_original/smartlook-rest-api-openapi.yml#GET /api/v1/events/{eventId}
+    - openapi/_original/smartlook-rest-api-openapi.yml#GET /api/v1/visitors/{visitorId}/events
+  funnel:
+    path_segment:
+    - funnels
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/smartlook-rest-api-openapi.yml#GET /api/v1/funnels
+    - openapi/_original/smartlook-rest-api-openapi.yml#GET /api/v1/funnels/{funnelId}

@@ -1,0 +1,19 @@
+provider: insider
+apis_io: https://apis.io/providers/insider/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/insider-eureka-events-openapi.yml#POST /api/v1/events
+  profile:
+    path_segment:
+    - profile
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/insider-unification-openapi.yml#POST /api/user/v1/profile

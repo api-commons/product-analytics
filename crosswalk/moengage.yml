@@ -1,0 +1,26 @@
+provider: moengage
+apis_io: https://apis.io/providers/moengage/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - event
+    - events
+    properties:
+      user_id: customer_id
+      type: type
+      anonymous_id: device_id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/moengage-data-openapi.yml#POST /event/{Workspace_ID}
+    - openapi/_original/moengage-personalize-experience-openapi.yml#POST /experiences/events
+  dashboard:
+    path_segment:
+    - dashboards
+    properties:
+      id: _id
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/moengage-analytics-openapi.yml#GET /v5/analytics/dashboards

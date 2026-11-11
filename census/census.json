@@ -1,0 +1,3323 @@
+{
+ "cohort_size": 80,
+ "unreadable": [],
+ "concepts": {
+  "event": {
+   "adobe-analytics": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "uploadTrackingCode": "string",
+     "fileSize": "integer",
+     "receivedTime": "string"
+    },
+    "evidence": [
+     "openapi/_original/adobe-analytics-bulk-data-insertion-api-openapi.yml#POST /events"
+    ]
+   },
+   "amplitude": {
+    "segments": [
+     "event"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "event_type": "string",
+     "category": "object",
+     "description": "string",
+     "success": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/amplitude-taxonomy-api-openapi.yml#DELETE /api/2/taxonomy/event/{event_type}",
+     "openapi/_original/amplitude-taxonomy-api-openapi.yml#GET /api/2/taxonomy/event",
+     "openapi/_original/amplitude-taxonomy-api-openapi.yml#GET /api/2/taxonomy/event/{event_type}",
+     "openapi/_original/amplitude-taxonomy-api-openapi.yml#POST /api/2/taxonomy/event",
+     "openapi/_original/amplitude-taxonomy-api-openapi.yml#PUT /api/2/taxonomy/event/{event_type}"
+    ]
+   },
+   "autoleadstar": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "identifier": "string",
+     "type": "string",
+     "timestamp": "string",
+     "product": "string",
+     "website_user_id": "string",
+     "website_page_id": "integer",
+     "time_on_page": "integer",
+     "url": "string",
+     "clickable_url": "string",
+     "url_title": "string",
+     "session_number": "string",
+     "page_view_in_session": "string",
+     "referrer": "string",
+     "utm_source": "string",
+     "utm_medium": "string",
+     "utm_campaign": "string",
+     "utm_term": "string",
+     "utm_content": "string",
+     "gclid": "string",
+     "device": "string",
+     "browser": "string",
+     "browser_version": "string",
+     "screen_resolution": "string",
+     "os": "string",
+     "ip_address": "string",
+     "browser_language": "string",
+     "country_code": "string",
+     "country_name": "string",
+     "latitude": "string",
+     "longitude": "string",
+     "city": "string",
+     "region": "string",
+     "zipcode": "string",
+     "tracking_cookie": "string",
+     "is_last_call": "boolean",
+     "is_vdp": "boolean",
+     "traffic_source": "string"
+    },
+    "evidence": [
+     "openapi/_original/autoleadstar-fullpath-api-openapi.yml#GET /dealerships/{dealershipId}/shoppers/{id}/events"
+    ]
+   },
+   "blueshift": {
+    "segments": [
+     "event"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "status": "string",
+     "customer_id": "string",
+     "event": "string",
+     "device_type": "string",
+     "device_token": "string",
+     "device_id": "string",
+     "device_idfa": "string",
+     "device_idfv": "string",
+     "device_manufacturer": "string",
+     "os_name": "string",
+     "network_carrier": "string",
+     "ip": "string",
+     "email": "string",
+     "latitude": "string",
+     "longitude": "string",
+     "event_uuid": "string",
+     "cookie": "string",
+     "subscription_groups": "array"
+    },
+    "evidence": [
+     "openapi/_original/blueshift-openapi.json#POST /api/v1/event",
+     "openapi/_original/blueshift-openapi.yml#POST /api/v1/event"
+    ]
+   },
+   "boom-ai": {
+    "segments": [
+     "events",
+     "batch"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "externalId": "string",
+     "name": "string",
+     "timestamp": "string",
+     "personExternalId": null,
+     "customObjectType": null,
+     "customObjectExternalId": null,
+     "properties": "object",
+     "receivedAt": "string",
+     "created": "boolean",
+     "eventId": "string",
+     "personId": "string",
+     "total": "integer",
+     "skipped": "integer",
+     "failed": "integer"
+    },
+    "evidence": [
+     "openapi/_original/boom-ai-openapi.json#GET /api/v1/cdp/events",
+     "openapi/_original/boom-ai-openapi.json#GET /api/v1/cdp/events/{externalId}",
+     "openapi/_original/boom-ai-openapi.json#POST /api/v1/cdp/events",
+     "openapi/_original/boom-ai-openapi.json#POST /api/v1/cdp/events/batch"
+    ]
+   },
+   "clix-so": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "user_id": "string",
+     "device_id": "string",
+     "name": "string",
+     "event_property": "object"
+    },
+    "evidence": [
+     "openapi/_original/clix-so-external-v1-openapi.json#POST /api/v1/events",
+     "openapi/_original/clix-so-openapi.yml#POST /api/v1/events"
+    ]
+   },
+   "counter-dev": {
+    "segments": [
+     "track"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/counter-dev-openapi.yml#GET /track"
+    ]
+   },
+   "crossenagage": {
+    "segments": [
+     "events",
+     "track"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "email": "string",
+     "events": "object",
+     "stage": "string",
+     "total": "string",
+     "success": "string",
+     "error": "string"
+    },
+    "evidence": [
+     "openapi/_original/crossenagage-user-management-v1-apib2swagger.json#POST /events",
+     "openapi/_original/crossenagage-user-management-v1-openapi.yml#POST /events",
+     "openapi/_original/crossenagage-user-management-v2-apib2swagger.json#GET /users/track/{trackingId}",
+     "openapi/_original/crossenagage-user-management-v2-openapi.yml#GET /users/track/{trackingId}"
+    ]
+   },
+   "customer-io": {
+    "segments": [
+     "events",
+     "track"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "events": "array",
+     "recipient": "string",
+     "from_address": "string",
+     "reply_to": "string",
+     "delivery_id": "string",
+     "event": "string",
+     "device_id": "string",
+     "timestamp": "integer",
+     "userId": "string",
+     "type": "string",
+     "properties": "object",
+     "integrations": "object",
+     "messageId": "string",
+     "receivedAt": "string",
+     "sentAt": "string",
+     "originalTimestamp": "string",
+     "version": "number",
+     "context": null
+    },
+    "evidence": [
+     "openapi/_original/customer-io-app-api-openapi.json#POST /v1/data_index/events",
+     "openapi/_original/customer-io-journeys-api-openapi.json#POST /api/v1/customers/{identifier}/events",
+     "openapi/_original/customer-io-journeys-api-openapi.json#POST /api/v1/events",
+     "openapi/_original/customer-io-journeys-api-openapi.json#POST /api/v1/push/events",
+     "openapi/_original/customer-io-journeys-api-openapi.json#POST /v1/data_index/events",
+     "openapi/_original/customer-io-pipelines-api-openapi.json#POST /track",
+     "openapi/_original/customer-io-track-api-openapi.json#POST /api/v1/customers/{identifier}/events",
+     "openapi/_original/customer-io-track-api-openapi.json#POST /api/v1/events",
+     "openapi/_original/customer-io-track-api-openapi.json#POST /api/v1/push/events"
+    ]
+   },
+   "das-technology": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/das-technology-daswebapi-v1-openapi.yml#GET /v1/mail/events/{token}",
+     "openapi/_original/das-technology-daswebapi-v1-swagger.json#GET /v1/mail/events/{token}"
+    ]
+   },
+   "emarsys": {
+    "segments": [
+     "event"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "created": "string"
+    },
+    "evidence": [
+     "openapi/_original/emarsys-events-openapi.yml#GET /v2/event/",
+     "openapi/_original/emarsys-events-openapi.yml#GET /v2/event/{eventId}",
+     "openapi/_original/emarsys-events-openapi.yml#POST /v2/event",
+     "openapi/_original/emarsys-events-openapi.yml#POST /v2/event/{eventId}"
+    ]
+   },
+   "freshpaint": {
+    "segments": [
+     "track"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "event": "string",
+     "properties": "object"
+    },
+    "evidence": [
+     "openapi/_original/freshpaint-openapi.yml#POST /track"
+    ]
+   },
+   "fullstory": {
+    "segments": [
+     "events",
+     "batch"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "timestamp": "string",
+     "session": "object",
+     "user": "object",
+     "properties": "object",
+     "schema": "object",
+     "id": "string",
+     "status": "string",
+     "created": "string"
+    },
+    "evidence": [
+     "openapi/_original/fullstory-server-api-openapi.yml#POST /v2/events",
+     "openapi/_original/fullstory-server-api-openapi.yml#POST /v2/events/batch"
+    ]
+   },
+   "gainsight": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "result": "boolean",
+     "errorCode": "string",
+     "errorDesc": "string",
+     "requestId": "string",
+     "eventType": "string",
+     "objectType": "string",
+     "operation": "string",
+     "companyId": "string",
+     "payload": "object",
+     "timestamp": "string",
+     "sourceSystem": "string",
+     "successCount": "integer",
+     "failureCount": "integer"
+    },
+    "evidence": [
+     "openapi/_original/gainsight-cs-events-api-openapi.yml#POST /events",
+     "openapi/_original/gainsight-cs-events-api-openapi.yml#POST /events/bulk"
+    ]
+   },
+   "google-analytics": {
+    "segments": [
+     "collect"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "client_id": "string",
+     "app_instance_id": "string",
+     "user_id": "string",
+     "timestamp_micros": "integer",
+     "user_properties": "object",
+     "user_data": "object",
+     "consent": "object",
+     "non_personalized_ads": "boolean",
+     "user_location": "object",
+     "ip_override": "string",
+     "device": "object",
+     "validation_behavior": "string",
+     "events": "array"
+    },
+    "evidence": [
+     "openapi/_original/google-analytics-measurement-protocol.yaml#POST /collect"
+    ]
+   },
+   "heap": {
+    "segments": [
+     "track"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "app_id": "string",
+     "event": "string",
+     "identity": "string",
+     "user_id": "string",
+     "session_id": "string",
+     "timestamp": "string",
+     "idempotency_key": "string",
+     "properties": "object"
+    },
+    "evidence": [
+     "openapi/_original/heap-openapi.yml#POST /api/track"
+    ]
+   },
+   "incentivio": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "templateId": "string",
+     "clientId": "string",
+     "merchantId": "string",
+     "name": "string",
+     "jsonTemplate": "string",
+     "htmlTemplate": "string",
+     "fromAddress": "string",
+     "bcc": "string",
+     "subject": "string",
+     "eventType": "string",
+     "createdDate": "string",
+     "emailTemplateType": "string",
+     "reusable": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-client-domain/templates/events/{event}",
+     "openapi/_original/incentivio-admin-api-openapi.yml#GET /incentivio-client-domain/templates/events/{event}"
+    ]
+   },
+   "insider": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/insider-eureka-events-openapi.yml#POST /api/v1/events"
+    ]
+   },
+   "june": {
+    "segments": [
+     "track"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "status": "integer",
+     "success": "boolean",
+     "userId": "string",
+     "anonymousId": "string",
+     "event": "string",
+     "properties": "object",
+     "timestamp": "string",
+     "context": "object"
+    },
+    "evidence": [
+     "openapi/_original/june-tracking-api-openapi.yml#POST /track"
+    ]
+   },
+   "kissmetrics": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "product_id": "integer",
+     "name": "string",
+     "visible": "boolean",
+     "total": "integer",
+     "first_used_at": "string",
+     "last_used_at": "string",
+     "first_sent_at": "string",
+     "last_sent_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/kissmetrics-fetch-events.json#GET /products/{product_id}/events"
+    ]
+   },
+   "lytics": {
+    "segments": [
+     "event",
+     "events"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "ts": "string",
+     "priority": "number",
+     "subject_type": "string",
+     "subject_id": "string",
+     "verb": "string",
+     "account_id": "string",
+     "related": "array",
+     "context": "object",
+     "_meta": "object",
+     "data": "object",
+     "request_id": "string",
+     "status": "integer",
+     "aid": "integer",
+     "notes": "string",
+     "timestamp": "string",
+     "user_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/lytics-api-v1-openapi.json#GET /api/event",
+     "openapi/_original/lytics-api-v2-openapi.json#GET /event",
+     "openapi/_original/lytics-api-v2-openapi.json#GET /event/{id}",
+     "openapi/_original/lytics-api-v2-openapi.json#GET /stream/{name}/events"
+    ]
+   },
+   "mapp": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/mapp-engage-openapi.yml#GET /auditlog/events"
+    ]
+   },
+   "mixpanel": {
+    "segments": [
+     "track"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "status": "integer",
+     "error": "string",
+     "event": "string",
+     "properties": "object"
+    },
+    "evidence": [
+     "openapi/_original/mixpanel-ingestion-openapi.yml#POST /track"
+    ]
+   },
+   "moengage": {
+    "segments": [
+     "event",
+     "events"
+    ],
+    "operations": [
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "status": "string",
+     "message": "string",
+     "type": "string",
+     "customer_id": "string",
+     "device_id": "string",
+     "user_identifiers": "object",
+     "actions": "array",
+     "req_id": "string",
+     "user_attributes": "object",
+     "user_timezone_offset": "integer"
+    },
+    "evidence": [
+     "openapi/_original/moengage-data-openapi.yml#POST /event/{Workspace_ID}",
+     "openapi/_original/moengage-personalize-experience-openapi.yml#POST /experiences/events"
+    ]
+   },
+   "mparticle": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "source_request_id": "string",
+     "batch_context": "object",
+     "events": "array",
+     "device_info": "object",
+     "application_info": "object",
+     "user_attributes": "object",
+     "deleted_user_attributes": "array",
+     "user_identities": "object",
+     "environment": "string",
+     "api_key": "string",
+     "api_keys": "array",
+     "ip": "string",
+     "integration_attributes": "object",
+     "partner_identity": "string",
+     "source_info": "object",
+     "mp_deviceid": "string",
+     "attribution_info": "object",
+     "timestamp_unixtime_ms": "integer",
+     "batch_id": "integer",
+     "mpid": "integer",
+     "sdk_version": "string",
+     "consent_state": "object",
+     "job_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/mparticle-events-openapi-original.yml#POST /events"
+    ]
+   },
+   "openpanel": {
+    "segments": [
+     "events",
+     "event",
+     "track"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "deviceId": "string",
+     "sessionId": "string",
+     "type": "string",
+     "payload": "object"
+    },
+    "evidence": [
+     "openapi/_original/openpanel-openapi.yml#GET /export/events",
+     "openapi/_original/openpanel-openapi.yml#GET /insights/{projectId}/events",
+     "openapi/_original/openpanel-openapi.yml#POST /event/",
+     "openapi/_original/openpanel-openapi.yml#POST /import/events",
+     "openapi/_original/openpanel-openapi.yml#POST /track/"
+    ]
+   },
+   "pendoio": {
+    "segments": [
+     "track"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/pendoio-engage-openapi.yml#POST /data/track"
+    ]
+   },
+   "pirsch": {
+    "segments": [
+     "event",
+     "events"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "ip": "string",
+     "user_agent": "string",
+     "accept_language": "string",
+     "referrer": "string",
+     "title": "string",
+     "sec_ch_ua": "string",
+     "sec_ch_ua_mobile": "string",
+     "sec_ch_ua_platform": "string",
+     "sec_ch_ua_platform_version": "string",
+     "sec_ch_width": "string",
+     "sec_ch_viewport_width": "string",
+     "screen_width": "integer",
+     "screen_height": "integer",
+     "disable_bot_filter": "boolean",
+     "tags": "object",
+     "event_name": "string",
+     "event_duration": "number",
+     "event_meta": "object",
+     "non_interactive": "boolean",
+     "name": "string",
+     "count": "integer",
+     "visitors": "integer",
+     "views": "integer",
+     "cr": "number",
+     "average_duration_seconds": "integer",
+     "meta_keys": "array"
+    },
+    "evidence": [
+     "openapi/_original/pirsch-pirsch-api-openapi.yml#GET /statistics/events",
+     "openapi/_original/pirsch-pirsch-api-openapi.yml#POST /event"
+    ]
+   },
+   "plausible": {
+    "segments": [
+     "event"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "domain": "string",
+     "name": "string",
+     "url": "string",
+     "referrer": "string",
+     "props": "object",
+     "revenue": "object",
+     "interactive": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/plausible-events-openapi.yml#POST /api/event"
+    ]
+   },
+   "posthog": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "distinct_id": "string",
+     "properties": "object",
+     "event": "string",
+     "timestamp": "string",
+     "person": "object",
+     "elements": "array",
+     "elements_chain": "string"
+    },
+    "evidence": [
+     "openapi/_original/posthog-openapi.yml#GET /api/environments/{environment_id}/events/",
+     "openapi/_original/posthog-openapi.yml#GET /api/environments/{environment_id}/events/{id}/",
+     "openapi/_original/posthog-openapi.yml#GET /api/environments/{environment_id}/heatmaps/events/",
+     "openapi/_original/posthog-openapi.yml#GET /api/projects/{project_id}/events/",
+     "openapi/_original/posthog-openapi.yml#GET /api/projects/{project_id}/events/{id}/",
+     "openapi/_original/posthog-openapi.yml#GET /api/projects/{project_id}/heatmaps/events/"
+    ]
+   },
+   "rudderstack": {
+    "segments": [
+     "track"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "userId": "string",
+     "anonymousId": "string",
+     "event": "string",
+     "properties": "object",
+     "context": "object",
+     "timestamp": "string"
+    },
+    "evidence": [
+     "openapi/_original/rudderstack-gateway-openapi.yml#POST /v1/track"
+    ]
+   },
+   "rybbit": {
+    "segments": [
+     "track"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "site_id": "string",
+     "type": "string",
+     "event_name": "string",
+     "hostname": "string",
+     "pathname": "string",
+     "querystring": "string",
+     "page_title": "string",
+     "referrer": "string",
+     "language": "string",
+     "screenWidth": "integer",
+     "screenHeight": "integer",
+     "user_agent": "string",
+     "properties": "string"
+    },
+    "evidence": [
+     "openapi/_original/rybbit-openapi.yml#POST /api/track"
+    ]
+   },
+   "segment": {
+    "segments": [
+     "track",
+     "events"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "userId": "string",
+     "anonymousId": "string",
+     "event": "string",
+     "properties": "object",
+     "context": "object",
+     "integrations": "object",
+     "timestamp": "string",
+     "messageId": "string",
+     "type": "string",
+     "traits": "object",
+     "source_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/segment-http-tracking-api-openapi.yml#POST /track",
+     "openapi/_original/segment-profile-api-openapi.yml#GET /collections/users/profiles/{externalId}/events"
+    ]
+   },
+   "sendlane": {
+    "segments": [
+     "events",
+     "event"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "message": "string",
+     "token": "string",
+     "custom_event": "string",
+     "email": "string",
+     "phone": "string",
+     "data": "object",
+     "id": "integer",
+     "name": "string",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/sendlane-openapi.yml#DELETE /integrations/custom/{integrationToken}/events/{eventId}",
+     "openapi/_original/sendlane-openapi.yml#GET /integrations/custom/{integrationToken}/events",
+     "openapi/_original/sendlane-openapi.yml#GET /integrations/custom/{integrationToken}/events/{eventId}",
+     "openapi/_original/sendlane-openapi.yml#POST /integrations/custom/{integrationToken}/events",
+     "openapi/_original/sendlane-openapi.yml#POST /tracking/event",
+     "openapi/_original/sendlane-v2.v2.yaml#DELETE /integrations/custom/{integrationToken}/events/{eventId}",
+     "openapi/_original/sendlane-v2.v2.yaml#GET /integrations/custom/{integrationToken}/events",
+     "openapi/_original/sendlane-v2.v2.yaml#GET /integrations/custom/{integrationToken}/events/{eventId}",
+     "openapi/_original/sendlane-v2.v2.yaml#POST /integrations/custom/{integrationToken}/events",
+     "openapi/_original/sendlane-v2.v2.yaml#POST /tracking/event"
+    ]
+   },
+   "simon-data": {
+    "segments": [
+     "collect"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "partnerId": "string",
+     "context": "object",
+     "clientId": "string",
+     "partnerSecret": "string",
+     "ipAddress": "string",
+     "sentAt": "integer",
+     "timezone": "integer",
+     "type": "string",
+     "event": "string",
+     "userId": "string",
+     "traits": "object",
+     "properties": "object",
+     "term": "string",
+     "searchItems": "object"
+    },
+    "evidence": [
+     "openapi/_original/simon-data-event-ingestion-openapi.yml#POST /events/v1/collect",
+     "openapi/_original/simon-data-readme-add-to-cartevent-openapi.json#POST /events/v1/collect",
+     "openapi/_original/simon-data-readme-authenticationevent-openapi.json#POST /events/v1/collect",
+     "openapi/_original/simon-data-readme-cartevent-openapi.json#POST /events/v1/collect",
+     "openapi/_original/simon-data-readme-complete-transactionevent-openapi.json#POST /events/v1/collect",
+     "openapi/_original/simon-data-readme-customevent-openapi.json#POST /events/v1/collect",
+     "openapi/_original/simon-data-readme-favoriteevent-openapi.json#POST /events/v1/collect",
+     "openapi/_original/simon-data-readme-identifyevent-openapi.json#POST /events/v1/collect",
+     "openapi/_original/simon-data-readme-page-viewevent-openapi.json#POST /events/v1/collect",
+     "openapi/_original/simon-data-readme-product-viewevent-openapi.json#POST /events/v1/collect",
+     "openapi/_original/simon-data-readme-registrationevent-openapi.json#POST /events/v1/collect",
+     "openapi/_original/simon-data-readme-remove-from-cartevent-openapi.json#POST /events/v1/collect"
+    ]
+   },
+   "simpleanalytics": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "hostname": "string",
+     "event": "string",
+     "path": "string",
+     "ua": "string",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/simpleanalytics-openapi.yml#POST /events"
+    ]
+   },
+   "smartlook": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "events": "array",
+     "totalCount": "number",
+     "pagination": "object",
+     "_links": "object",
+     "id": "string",
+     "name": "string",
+     "categoryId": "string",
+     "categoryName": "string",
+     "totalOccurrence": "number",
+     "uniqueVisitors": "number",
+     "newVisitors": "number",
+     "averageOccurrencePerVisitor": "number",
+     "occurrenceHistogram": "array"
+    },
+    "evidence": [
+     "openapi/_original/smartlook-rest-api-openapi.yml#DELETE /api/v1/events/{eventId}",
+     "openapi/_original/smartlook-rest-api-openapi.yml#GET /api/v1/events",
+     "openapi/_original/smartlook-rest-api-openapi.yml#GET /api/v1/events/{eventId}",
+     "openapi/_original/smartlook-rest-api-openapi.yml#GET /api/v1/visitors/{visitorId}/events"
+    ]
+   },
+   "tealium": {
+    "segments": [
+     "event"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "tealium_account": "string",
+     "tealium_profile": "string",
+     "tealium_event": "string",
+     "tealium_visitor_id": "string",
+     "tealium_datasource": "string",
+     "tealium_environment": "string"
+    },
+    "evidence": [
+     "openapi/_original/tealium-collect-http-openapi.yml#GET /collect/event",
+     "openapi/_original/tealium-collect-http-openapi.yml#POST /collect/event",
+     "openapi/_original/tealium-collect-http-openapi.yml#POST /collect/regional/event"
+    ]
+   },
+   "umami": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "dataType": "number",
+     "eventName": "string",
+     "propertyName": "string",
+     "propertyValue": "string",
+     "total": "number",
+     "createdAt": "string",
+     "distinctId": [
+      "string",
+      "null"
+     ],
+     "eventType": "integer",
+     "hostname": [
+      "string",
+      "null"
+     ],
+     "id": "string",
+     "pageTitle": [
+      "string",
+      "null"
+     ],
+     "referrerDomain": [
+      "string",
+      "null"
+     ],
+     "sessionId": "string",
+     "urlPath": [
+      "string",
+      "null"
+     ],
+     "urlQuery": [
+      "string",
+      "null"
+     ],
+     "websiteId": "string"
+    },
+    "evidence": [
+     "openapi/_original/umami-openapi.json#GET /api/websites/{websiteId}/event-data/events",
+     "openapi/_original/umami-openapi.json#GET /api/websites/{websiteId}/events",
+     "openapi/_original/umami-openapi.yml#GET /api/websites/{websiteId}/event-data/events",
+     "openapi/_original/umami-openapi.yml#GET /api/websites/{websiteId}/events"
+    ]
+   },
+   "zaius": {
+    "segments": [
+     "events"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "action": "string",
+     "identifiers": "object",
+     "data": "object",
+     "ts": "number",
+     "order": "object"
+    },
+    "evidence": [
+     "openapi/_original/zaius-events-openapi.json#POST /events",
+     "openapi/_original/zaius-orders-openapi.json#POST /events"
+    ]
+   }
+  },
+  "profile": {
+   "blueconic": {
+    "segments": [
+     "profiles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT collection"
+    ],
+    "properties": {
+     "itemsPerPage": "integer",
+     "profiles": "array",
+     "startIndex": "integer",
+     "totalPages": "integer",
+     "totalResults": "integer",
+     "identifier": "string",
+     "profileId": "string",
+     "state": "string",
+     "timeline": "array",
+     "validationErrors": "object",
+     "domainGroup": "string",
+     "matching": "array",
+     "permissionLevel": "string",
+     "privacyLegislation": "string",
+     "properties": "array",
+     "restriction": "object",
+     "strategy": "string",
+     "triggerOnEventAdded": "boolean",
+     "triggerOnPropertyChange": "boolean",
+     "id": "string",
+     "creationDate": "string",
+     "consentedObjectives": "array",
+     "refusedObjectives": "array",
+     "permissions": "object",
+     "events": "array",
+     "groups": "array",
+     "matchingGroups": "array",
+     "lifecycleStages": "array",
+     "replacedBy": "string",
+     "replaces": "array",
+     "segments": "array",
+     "cursor": "string",
+     "links": "array",
+     "nextCursor": "string"
+    },
+    "evidence": [
+     "openapi/_original/blueconic-rest-api-v2-openapi.yml#GET /profiles",
+     "openapi/_original/blueconic-rest-api-v2-openapi.yml#GET /profiles/{profileId}",
+     "openapi/_original/blueconic-rest-api-v2-openapi.yml#GET /segments/{segment}/profiles",
+     "openapi/_original/blueconic-rest-api-v2-openapi.yml#PUT /profiles"
+    ]
+   },
+   "boom-ai": {
+    "segments": [
+     "people"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "externalId": "string",
+     "firstName": null,
+     "lastName": null,
+     "email": null,
+     "phoneNumber": null,
+     "attributes": "object",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "created": "boolean",
+     "mode": "string",
+     "removed": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/boom-ai-openapi.json#DELETE /api/v1/cdp/people/{externalId}",
+     "openapi/_original/boom-ai-openapi.json#GET /api/v1/cdp/people",
+     "openapi/_original/boom-ai-openapi.json#GET /api/v1/cdp/people/{externalId}",
+     "openapi/_original/boom-ai-openapi.json#POST /api/v1/cdp/people"
+    ]
+   },
+   "customer-io": {
+    "segments": [
+     "identify"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "userId": "string",
+     "anonymousId": "string",
+     "type": "string",
+     "traits": "object",
+     "integrations": "object",
+     "messageId": "string",
+     "receivedAt": "string",
+     "sentAt": "string",
+     "originalTimestamp": "string",
+     "timestamp": "string",
+     "version": "number",
+     "active": "boolean",
+     "ip": "string",
+     "locale": "string",
+     "userAgent": "string",
+     "channel": "string",
+     "campaign": "object",
+     "page": "object"
+    },
+    "evidence": [
+     "openapi/_original/customer-io-pipelines-api-openapi.json#POST /identify"
+    ]
+   },
+   "gainsight": {
+    "segments": [
+     "person",
+     "people"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "count": "integer",
+     "insertedCount": "integer",
+     "updatedCount": "integer",
+     "failedCount": "integer",
+     "failures": "array",
+     "Gsid": "string",
+     "FirstName": "string",
+     "LastName": "string",
+     "Email": "string",
+     "CompanyId": "string",
+     "CompanyName": "string",
+     "Title": "string",
+     "Role": "string",
+     "Phone": "string",
+     "Location": "string",
+     "LinkedinUrl": "string",
+     "MasterAvatarTypeCode": "string",
+     "Timezone": "string",
+     "SfdcContactId": "string",
+     "NPS": "number",
+     "IsPrimary": "boolean",
+     "IsActive": "boolean",
+     "CreatedDate": "string",
+     "ModifiedDate": "string",
+     "result": "boolean",
+     "errorCode": "string",
+     "errorDesc": "string",
+     "requestId": "string"
+    },
+    "evidence": [
+     "openapi/_original/gainsight-cs-person-api-openapi.yml#DELETE /data/objects/Person/{recordId}",
+     "openapi/_original/gainsight-cs-person-api-openapi.yml#GET /data/objects/Person/{recordId}",
+     "openapi/_original/gainsight-cs-person-api-openapi.yml#POST /data/objects/Person",
+     "openapi/_original/gainsight-rest-api-openapi.yml#GET /v1/people"
+    ]
+   },
+   "google-analytics": {
+    "segments": [
+     "profiles"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "items": "array",
+     "itemsPerPage": "integer",
+     "kind": "string",
+     "nextLink": "string",
+     "previousLink": "string",
+     "startIndex": "integer",
+     "totalResults": "integer",
+     "username": "string",
+     "accountId": "string",
+     "botFilteringEnabled": "boolean",
+     "childLink": "object",
+     "created": "string",
+     "currency": "string",
+     "defaultPage": "string",
+     "eCommerceTracking": "boolean",
+     "enhancedECommerceTracking": "boolean",
+     "excludeQueryParameters": "string",
+     "id": "string",
+     "internalWebPropertyId": "string",
+     "name": "string",
+     "parentLink": "object",
+     "permissions": "object",
+     "selfLink": "string",
+     "siteSearchCategoryParameters": "string",
+     "siteSearchQueryParameters": "string",
+     "starred": "boolean",
+     "stripSiteSearchCategoryParameters": "boolean",
+     "stripSiteSearchQueryParameters": "boolean",
+     "timezone": "string",
+     "type": "string",
+     "updated": "string",
+     "webPropertyId": "string",
+     "websiteUrl": "string"
+    },
+    "evidence": [
+     "openapi/_original/google-analytics-management-api-v3.yaml#DELETE /management/accounts/{accountId}/webproperties/{webPropertyId}/profiles/{profileId}",
+     "openapi/_original/google-analytics-management-api-v3.yaml#GET /management/accounts/{accountId}/webproperties/{webPropertyId}/profiles",
+     "openapi/_original/google-analytics-management-api-v3.yaml#GET /management/accounts/{accountId}/webproperties/{webPropertyId}/profiles/{profileId}",
+     "openapi/_original/google-analytics-management-api-v3.yaml#PATCH /management/accounts/{accountId}/webproperties/{webPropertyId}/profiles/{profileId}",
+     "openapi/_original/google-analytics-management-api-v3.yaml#POST /management/accounts/{accountId}/webproperties/{webPropertyId}/profiles",
+     "openapi/_original/google-analytics-management-api-v3.yaml#PUT /management/accounts/{accountId}/webproperties/{webPropertyId}/profiles/{profileId}"
+    ]
+   },
+   "heap": {
+    "segments": [
+     "identify"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "app_id": "string",
+     "identity": "string",
+     "user_id": "string",
+     "timestamp": "string"
+    },
+    "evidence": [
+     "openapi/_original/heap-openapi.yml#POST /api/v1/identify"
+    ]
+   },
+   "immutable": {
+    "segments": [
+     "profile"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "username": "string"
+    },
+    "evidence": [
+     "openapi/_original/immutable-zkevm-openapi.json#GET /passport-profile/v1/profile"
+    ]
+   },
+   "insider": {
+    "segments": [
+     "profile"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/insider-unification-openapi.yml#POST /api/user/v1/profile"
+    ]
+   },
+   "june": {
+    "segments": [
+     "identify"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "status": "integer",
+     "success": "boolean",
+     "userId": "string",
+     "anonymousId": "string",
+     "traits": "object",
+     "timestamp": "string",
+     "context": "object"
+    },
+    "evidence": [
+     "openapi/_original/june-tracking-api-openapi.yml#POST /identify"
+    ]
+   },
+   "logrocket": {
+    "segments": [
+     "users"
+    ],
+    "operations": [
+     "PUT item"
+    ],
+    "properties": {
+     "userId": "string",
+     "name": "string",
+     "email": "string",
+     "traits": "object"
+    },
+    "evidence": [
+     "openapi/_original/logrocket-rest-api-openapi.yml#PUT /orgs/{orgId}/apps/{appId}/users/{userId}"
+    ]
+   },
+   "lucidya-ltd": {
+    "segments": [
+     "profiles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "message": "string",
+     "profile_id": "integer",
+     "email": "string",
+     "phone_number": "string",
+     "twitter": "string",
+     "facebook": "string",
+     "instagram": "string",
+     "intercom": "string",
+     "gmail": "string",
+     "whatsapp": "string",
+     "tiktok": "string",
+     "field_value": "string",
+     "field_name": "string",
+     "action": "string",
+     "id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/lucidya-ltd-cdp-api-openapi.yml#GET /profiles",
+     "openapi/_original/lucidya-ltd-cdp-api-openapi.yml#GET /profiles/{id}",
+     "openapi/_original/lucidya-ltd-cdp-api-openapi.yml#POST /profiles",
+     "openapi/_original/lucidya-ltd-cdp-api-openapi.yml#PUT /profiles",
+     "openapi/_original/lucidya-ltd-cdp-api.yml#GET /profiles",
+     "openapi/_original/lucidya-ltd-cdp-api.yml#GET /profiles/{id}",
+     "openapi/_original/lucidya-ltd-cdp-api.yml#POST /profiles",
+     "openapi/_original/lucidya-ltd-cdp-api.yml#PUT /profiles"
+    ]
+   },
+   "mixpanel": {
+    "segments": [
+     "engage"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "status": "integer",
+     "error": "string",
+     "$token": "string",
+     "$distinct_id": "string",
+     "$ip": "string",
+     "$set": "object",
+     "$set_once": "object",
+     "$add": "object",
+     "$append": "object",
+     "$remove": "object",
+     "$union": "object",
+     "$unset": "array",
+     "$delete": "string"
+    },
+    "evidence": [
+     "openapi/_original/mixpanel-ingestion-openapi.yml#POST /engage"
+    ]
+   },
+   "mparticle": {
+    "segments": [
+     "identify"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "context": "string",
+     "matched_identities": "object",
+     "mpid": "string",
+     "is_ephemeral": "boolean",
+     "client_sdk": "object",
+     "environment": "string",
+     "request_id": "string",
+     "request_timestamp_ms": "integer",
+     "previous_mpid": "string",
+     "known_identities": "object"
+    },
+    "evidence": [
+     "openapi/_original/mparticle-identity-swagger-original.yml#POST /identify"
+    ]
+   },
+   "openpanel": {
+    "segments": [
+     "profiles",
+     "profile"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/openpanel-openapi.yml#GET /insights/{projectId}/profiles",
+     "openapi/_original/openpanel-openapi.yml#GET /insights/{projectId}/profiles/{profileId}",
+     "openapi/_original/openpanel-openapi.yml#POST /profile/"
+    ]
+   },
+   "posthog": {
+    "segments": [
+     "persons"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "distinct_ids": "array",
+     "properties": null,
+     "created_at": "string",
+     "uuid": "string",
+     "last_seen_at": "string",
+     "type": "string",
+     "is_identified": "boolean",
+     "matched_recordings": "array",
+     "value_at_data_point": "number"
+    },
+    "evidence": [
+     "openapi/_original/posthog-openapi.yml#GET /api/environments/{environment_id}/persons/",
+     "openapi/_original/posthog-openapi.yml#GET /api/environments/{environment_id}/persons/{id}/",
+     "openapi/_original/posthog-openapi.yml#GET /api/projects/{project_id}/cohorts/{id}/persons/",
+     "openapi/_original/posthog-openapi.yml#GET /api/projects/{project_id}/persons/",
+     "openapi/_original/posthog-openapi.yml#GET /api/projects/{project_id}/persons/{id}/",
+     "openapi/_original/posthog-openapi.yml#PATCH /api/environments/{environment_id}/persons/{id}/",
+     "openapi/_original/posthog-openapi.yml#PATCH /api/projects/{project_id}/persons/{id}/",
+     "openapi/_original/posthog-openapi.yml#PUT /api/environments/{environment_id}/persons/{id}/",
+     "openapi/_original/posthog-openapi.yml#PUT /api/projects/{project_id}/persons/{id}/"
+    ]
+   },
+   "rudderstack": {
+    "segments": [
+     "identify"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "userId": "string",
+     "anonymousId": "string",
+     "context": "object",
+     "timestamp": "string"
+    },
+    "evidence": [
+     "openapi/_original/rudderstack-gateway-openapi.yml#POST /v1/identify"
+    ]
+   },
+   "segment": {
+    "segments": [
+     "identify"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "userId": "string",
+     "anonymousId": "string",
+     "traits": "object",
+     "context": "object",
+     "integrations": "object",
+     "timestamp": "string",
+     "messageId": "string"
+    },
+    "evidence": [
+     "openapi/_original/segment-http-tracking-api-openapi.yml#POST /identify"
+    ]
+   },
+   "tealium": {
+    "segments": [
+     "profiles"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "token": "string",
+     "host": "string",
+     "audiences": "object",
+     "badges": "object",
+     "attributes": "object",
+     "transactionId": "string",
+     "currentVisit": "object",
+     "dates": "object",
+     "metrics": "object",
+     "properties": "object",
+     "flags": "object"
+    },
+    "evidence": [
+     "openapi/_original/tealium-authentication-openapi.yml#POST /auth/accounts/{account}/profiles/{profile}",
+     "openapi/_original/tealium-visitor-privacy-openapi.yml#DELETE /privacy/visitor/accounts/{account}/profiles/{profile}",
+     "openapi/_original/tealium-visitor-privacy-openapi.yml#GET /privacy/visitor/accounts/{account}/profiles/{profile}",
+     "openapi/_original/tealium-visitor-profile-openapi.yml#GET /customer/visitor/accounts/{account}/profiles/{profile}",
+     "openapi/_original/tealium-visitor-profile-openapi.yml#GET /customer/visitor/historical/accounts/{account}/profiles/{profile}"
+    ]
+   },
+   "zaius": {
+    "segments": [
+     "profiles"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "attributes": "object"
+    },
+    "evidence": [
+     "openapi/_original/zaius-customers-openapi.json#GET /profiles",
+     "openapi/_original/zaius-customers-openapi.json#POST /profiles"
+    ]
+   }
+  },
+  "cohort": {
+   "adobe-analytics": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "content": "array",
+     "totalElements": "integer",
+     "totalPages": "integer",
+     "numberOfElements": "integer",
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "rsid": "string",
+     "owner": "object",
+     "definition": "object",
+     "modified": "string",
+     "tags": "array"
+    },
+    "evidence": [
+     "openapi/_original/adobe-analytics-api-openapi.yml#DELETE /segments/{segmentId}",
+     "openapi/_original/adobe-analytics-api-openapi.yml#GET /segments",
+     "openapi/_original/adobe-analytics-api-openapi.yml#GET /segments/{segmentId}",
+     "openapi/_original/adobe-analytics-api-openapi.yml#POST /segments",
+     "openapi/_original/adobe-analytics-api-openapi.yml#PUT /segments/{segmentId}"
+    ]
+   },
+   "airship": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/airship-openapi.yml#DELETE /api/segments/{segment_id}",
+     "openapi/_original/airship-openapi.yml#GET /api/segments",
+     "openapi/_original/airship-openapi.yml#GET /api/segments/{segment_id}",
+     "openapi/_original/airship-openapi.yml#POST /api/segments"
+    ]
+   },
+   "amperity": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/amperity-control-plane-2024-04-01-openapi.json#GET /segments",
+     "openapi/_original/amperity-control-plane-unstable-openapi.json#GET /segments"
+    ]
+   },
+   "amplitude": {
+    "segments": [
+     "cohorts"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "size": "integer",
+     "lastComputed": "string",
+     "archived": "boolean",
+     "owner": "string",
+     "appId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/amplitude-behavioral-cohorts-api-openapi.yml#GET /api/3/cohorts"
+    ]
+   },
+   "blueconic": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "itemsPerPage": "integer",
+     "segments": "array",
+     "startIndex": "integer",
+     "totalPages": "integer",
+     "totalResults": "integer"
+    },
+    "evidence": [
+     "openapi/_original/blueconic-rest-api-v2-openapi.yml#GET /segments"
+    ]
+   },
+   "boom-ai": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "slug": "string",
+     "name": "string",
+     "description": null,
+     "evaluationCadence": "string",
+     "memberCount": "integer",
+     "lastEvaluatedAt": null,
+     "createdAt": "string",
+     "filterExpression": "object",
+     "dailyEvaluationHour": null,
+     "skipWeekendEvaluation": "boolean",
+     "outputColumns": "object",
+     "removed": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/boom-ai-openapi.json#DELETE /api/v1/segments/{slug}",
+     "openapi/_original/boom-ai-openapi.json#GET /api/v1/segments",
+     "openapi/_original/boom-ai-openapi.json#GET /api/v1/segments/{slug}",
+     "openapi/_original/boom-ai-openapi.json#PATCH /api/v1/segments/{slug}",
+     "openapi/_original/boom-ai-openapi.json#POST /api/v1/segments"
+    ]
+   },
+   "customer-io": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "deduplicate_id": "string",
+     "name": "string",
+     "description": "string",
+     "state": "string",
+     "progress": [
+      "integer",
+      "null"
+     ],
+     "type": "string",
+     "tags": [
+      "array",
+      "null"
+     ],
+     "created_at": "integer",
+     "updated_at": "integer",
+     "segment": "object",
+     "conditions": "object"
+    },
+    "evidence": [
+     "openapi/_original/customer-io-app-api-openapi.json#DELETE /v1/segments/{segment_id}",
+     "openapi/_original/customer-io-app-api-openapi.json#GET /v1/customers/{customer_id}/segments",
+     "openapi/_original/customer-io-app-api-openapi.json#GET /v1/segments",
+     "openapi/_original/customer-io-app-api-openapi.json#GET /v1/segments/{segment_id}",
+     "openapi/_original/customer-io-app-api-openapi.json#POST /v1/segments",
+     "openapi/_original/customer-io-journeys-api-openapi.json#DELETE /v1/segments/{segment_id}",
+     "openapi/_original/customer-io-journeys-api-openapi.json#GET /v1/customers/{customer_id}/segments",
+     "openapi/_original/customer-io-journeys-api-openapi.json#GET /v1/segments",
+     "openapi/_original/customer-io-journeys-api-openapi.json#GET /v1/segments/{segment_id}",
+     "openapi/_original/customer-io-journeys-api-openapi.json#POST /v1/segments"
+    ]
+   },
+   "google-analytics": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "items": "array",
+     "itemsPerPage": "integer",
+     "kind": "string",
+     "nextLink": "string",
+     "previousLink": "string",
+     "startIndex": "integer",
+     "totalResults": "integer",
+     "username": "string"
+    },
+    "evidence": [
+     "openapi/_original/google-analytics-management-api-v3.yaml#GET /management/segments"
+    ]
+   },
+   "incentivio": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "segmentName": "string",
+     "segmentDescription": "string",
+     "segmentType": "string",
+     "segmentTag": "string",
+     "segmentIcon": "string",
+     "visibleToCustomer": "boolean",
+     "languageCode": "string",
+     "segmentRules": "object",
+     "adminId": "string",
+     "adminEmail": "string",
+     "startDate": "string",
+     "createdDate": "string",
+     "updateDate": "string",
+     "lastProcessedDate": "string",
+     "timeZone": "string",
+     "expiredStatus": "boolean",
+     "deletedStatus": "boolean",
+     "segmentDistribution": "string",
+     "advancedSettings": "object"
+    },
+    "evidence": [
+     "openapi/_original/incentivio-admin-api-openapi.json#DELETE /incentivio-auto-tagger-service/segments/{segmentId}",
+     "openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-auto-tagger-service/segments",
+     "openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-auto-tagger-service/segments/{segmentId}",
+     "openapi/_original/incentivio-admin-api-openapi.json#POST /incentivio-auto-tagger-service/segments",
+     "openapi/_original/incentivio-admin-api-openapi.json#PUT /incentivio-auto-tagger-service/segments/{segmentId}",
+     "openapi/_original/incentivio-admin-api-openapi.yml#DELETE /incentivio-auto-tagger-service/segments/{segmentId}",
+     "openapi/_original/incentivio-admin-api-openapi.yml#GET /incentivio-auto-tagger-service/segments",
+     "openapi/_original/incentivio-admin-api-openapi.yml#GET /incentivio-auto-tagger-service/segments/{segmentId}",
+     "openapi/_original/incentivio-admin-api-openapi.yml#POST /incentivio-auto-tagger-service/segments",
+     "openapi/_original/incentivio-admin-api-openapi.yml#PUT /incentivio-auto-tagger-service/segments/{segmentId}"
+    ]
+   },
+   "knotch": {
+    "segments": [
+     "segment"
+    ],
+    "operations": [
+     "POST item"
+    ],
+    "properties": {
+     "events": "array"
+    },
+    "evidence": [
+     "openapi/_original/knotch-events-api-openapi-original.json#POST /conversion_events/segment/{account_id}"
+    ]
+   },
+   "lucidya-ltd": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "created_at": "number",
+     "creator_user": "string",
+     "profiles_count": "integer"
+    },
+    "evidence": [
+     "openapi/_original/lucidya-ltd-cdp-api-openapi.yml#GET /segments",
+     "openapi/_original/lucidya-ltd-cdp-api.yml#GET /segments"
+    ]
+   },
+   "lytics": {
+    "segments": [
+     "segment"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "account_id": "string",
+     "author_id": "string",
+     "kind": "string",
+     "segment_ql": "string",
+     "created": "string",
+     "updated": "string",
+     "description": "string",
+     "is_public": "boolean",
+     "name": "string",
+     "slug_name": "string",
+     "tags": "array",
+     "url": "string",
+     "title": "string",
+     "topics": "array",
+     "topic_relevances": "object",
+     "primary_image": "string",
+     "author": "string",
+     "sitename": "string",
+     "stream": "string",
+     "path": "array",
+     "aspects": "array",
+     "language": "string",
+     "fetched": "string",
+     "meta": "array",
+     "confidence": "number",
+     "visited": "boolean",
+     "_meta": "object",
+     "data": "object",
+     "request_id": "string",
+     "status": "integer",
+     "aid": "integer",
+     "ast": "object",
+     "category": "string",
+     "datemath_calc": "boolean",
+     "deleted": "boolean",
+     "field_changes_fields": "array",
+     "fields": "array",
+     "forward_datemath": "boolean",
+     "groups": "array",
+     "identities": "array",
+     "includes": "array",
+     "invalid": "boolean",
+     "invalid_reason": "string",
+     "public_name": "string",
+     "ql_resolved": "string",
+     "save_hist": "boolean",
+     "schedule_exit": "boolean",
+     "size": "integer",
+     "table": "string",
+     "withs_ql": "string",
+     "not_deleted": "array",
+     "segments": "array"
+    },
+    "evidence": [
+     "openapi/_original/lytics-api-v1-openapi.json#DELETE /api/segment/{id}",
+     "openapi/_original/lytics-api-v1-openapi.json#GET /api/content/recommend/segment/{segId}",
+     "openapi/_original/lytics-api-v1-openapi.json#GET /api/segment",
+     "openapi/_original/lytics-api-v1-openapi.json#GET /api/segment/{id}",
+     "openapi/_original/lytics-api-v1-openapi.json#POST /api/segment",
+     "openapi/_original/lytics-api-v1-openapi.json#PUT /api/segment/{id}",
+     "openapi/_original/lytics-api-v2-openapi.json#DELETE /segment/{ids}",
+     "openapi/_original/lytics-api-v2-openapi.json#DELETE /segment/{id}",
+     "openapi/_original/lytics-api-v2-openapi.json#GET /segment",
+     "openapi/_original/lytics-api-v2-openapi.json#GET /segment/{id}",
+     "openapi/_original/lytics-api-v2-openapi.json#POST /segment",
+     "openapi/_original/lytics-api-v2-openapi.json#PUT /segment/{id}"
+    ]
+   },
+   "mapp": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "title": "string",
+     "description": "string"
+    },
+    "evidence": [
+     "openapi/_original/mapp-intelligence-analytics-openapi.yml#GET /segments"
+    ]
+   },
+   "openpanel": {
+    "segments": [
+     "cohort"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/openpanel-openapi.yml#GET /insights/{projectId}/retention/cohort"
+    ]
+   },
+   "pendoio": {
+    "segments": [
+     "segment"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/pendoio-engage-openapi.yml#DELETE /api/v1/segment/{segmentId}",
+     "openapi/_original/pendoio-engage-openapi.yml#GET /api/v1/segment",
+     "openapi/_original/pendoio-engage-openapi.yml#GET /api/v1/segment/{id}",
+     "openapi/_original/pendoio-engage-openapi.yml#PUT /api/v1/guide/{guideId}/segment",
+     "openapi/_original/pendoio-engage-openapi.yml#PUT /api/v1/segment/{segmentId}"
+    ]
+   },
+   "posthog": {
+    "segments": [
+     "cohorts",
+     "cohort"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "status": "string",
+     "name": "string",
+     "description": "string",
+     "first_seen": "string",
+     "assignee": "object",
+     "external_issues": "array",
+     "cohort": "object",
+     "groups": null,
+     "deleted": "boolean",
+     "filters": null,
+     "query": null,
+     "version": "integer",
+     "pending_version": "integer",
+     "is_calculating": "boolean",
+     "created_by": null,
+     "created_at": "string",
+     "last_calculation": "string",
+     "last_backfill_person_properties_at": "string",
+     "errors_calculating": "integer",
+     "last_error_message": "string",
+     "count": "integer",
+     "is_static": "boolean",
+     "cohort_type": null,
+     "experiment_set": "array",
+     "_create_in_folder": "string",
+     "_create_static_person_ids": "array"
+    },
+    "evidence": [
+     "openapi/_original/posthog-openapi.yml#DELETE /api/projects/{project_id}/cohorts/{id}/",
+     "openapi/_original/posthog-openapi.yml#GET /api/environments/{environment_id}/persons/cohorts/",
+     "openapi/_original/posthog-openapi.yml#GET /api/projects/{project_id}/cohorts/",
+     "openapi/_original/posthog-openapi.yml#GET /api/projects/{project_id}/cohorts/{id}/",
+     "openapi/_original/posthog-openapi.yml#GET /api/projects/{project_id}/persons/cohorts/",
+     "openapi/_original/posthog-openapi.yml#PATCH /api/projects/{project_id}/cohorts/{id}/",
+     "openapi/_original/posthog-openapi.yml#POST /api/projects/{project_id}/cohorts/",
+     "openapi/_original/posthog-openapi.yml#PUT /api/environments/{project_id}/error_tracking/issues/{id}/cohort/",
+     "openapi/_original/posthog-openapi.yml#PUT /api/projects/{project_id}/cohorts/{id}/"
+    ]
+   },
+   "sendlane": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "list_id": "integer",
+     "match": "string",
+     "last_count": "integer",
+     "processed_at": "string",
+     "created_at": "string",
+     "is_in_progress": "boolean",
+     "data": null
+    },
+    "evidence": [
+     "openapi/_original/sendlane-openapi.yml#GET /contacts/{contactId}/segments",
+     "openapi/_original/sendlane-openapi.yml#GET /segments",
+     "openapi/_original/sendlane-openapi.yml#GET /segments/{segmentId}",
+     "openapi/_original/sendlane-v2.v2.yaml#GET /contacts/{contactId}/segments",
+     "openapi/_original/sendlane-v2.v2.yaml#GET /segments",
+     "openapi/_original/sendlane-v2.v2.yaml#GET /segments/{segmentId}"
+    ]
+   },
+   "statsig": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "type": "string",
+     "rules": "array",
+     "tags": "array",
+     "createdTime": "integer"
+    },
+    "evidence": [
+     "openapi/_original/statsig-console-api-openapi.yml#DELETE /segments/{id}",
+     "openapi/_original/statsig-console-api-openapi.yml#GET /segments",
+     "openapi/_original/statsig-console-api-openapi.yml#GET /segments/{id}",
+     "openapi/_original/statsig-console-api-openapi.yml#PATCH /segments/{id}",
+     "openapi/_original/statsig-console-api-openapi.yml#POST /segments"
+    ]
+   },
+   "treasure-data": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/treasure-data-cdp-api-openapi.yml#DELETE /entities/segments/{id}",
+     "openapi/_original/treasure-data-cdp-api-openapi.yml#GET /entities/segments/{id}",
+     "openapi/_original/treasure-data-cdp-api-openapi.yml#PATCH /entities/segments/{id}",
+     "openapi/_original/treasure-data-cdp-api-openapi.yml#POST /entities/segments"
+    ]
+   },
+   "umami": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "count": "number",
+     "data": "array",
+     "isCapped": "boolean",
+     "orderBy": "string",
+     "page": "number",
+     "pageSize": "number",
+     "search": "string",
+     "sortDescending": "boolean",
+     "createdAt": "string",
+     "id": "string",
+     "name": "string",
+     "parameters": null,
+     "type": "string",
+     "updatedAt": "string",
+     "websiteId": "string",
+     "ok": null
+    },
+    "evidence": [
+     "openapi/_original/umami-openapi.json#DELETE /api/websites/{websiteId}/segments/{segmentId}",
+     "openapi/_original/umami-openapi.json#GET /api/websites/{websiteId}/segments",
+     "openapi/_original/umami-openapi.json#GET /api/websites/{websiteId}/segments/{segmentId}",
+     "openapi/_original/umami-openapi.json#POST /api/websites/{websiteId}/segments",
+     "openapi/_original/umami-openapi.json#POST /api/websites/{websiteId}/segments/{segmentId}",
+     "openapi/_original/umami-openapi.yml#DELETE /api/websites/{websiteId}/segments/{segmentId}",
+     "openapi/_original/umami-openapi.yml#GET /api/websites/{websiteId}/segments",
+     "openapi/_original/umami-openapi.yml#GET /api/websites/{websiteId}/segments/{segmentId}",
+     "openapi/_original/umami-openapi.yml#POST /api/websites/{websiteId}/segments",
+     "openapi/_original/umami-openapi.yml#POST /api/websites/{websiteId}/segments/{segmentId}"
+    ]
+   },
+   "zaius": {
+    "segments": [
+     "segments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "segment_ids": "array",
+     "revision": "integer",
+     "description": "string",
+     "metadata": "object",
+     "definition": "object"
+    },
+    "evidence": [
+     "openapi/_original/zaius-realtimesegments-openapi.json#DELETE /segments/{segment_id}",
+     "openapi/_original/zaius-realtimesegments-openapi.json#GET /segments",
+     "openapi/_original/zaius-realtimesegments-openapi.json#GET /segments/{segment_id}",
+     "openapi/_original/zaius-realtimesegments-openapi.json#POST /segments/{segment_id}",
+     "openapi/_original/zaius-realtimesegments-openapi.json#PUT /segments/{segment_id}"
+    ]
+   }
+  },
+  "dashboard": {
+   "moengage": {
+    "segments": [
+     "dashboards"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "_id": "string",
+     "name": "string"
+    },
+    "evidence": [
+     "openapi/_original/moengage-analytics-openapi.yml#GET /v5/analytics/dashboards"
+    ]
+   },
+   "openpanel": {
+    "segments": [
+     "dashboards"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/openpanel-openapi.yml#GET /manage/projects/{projectId}/dashboards"
+    ]
+   },
+   "posthog": {
+    "segments": [
+     "dashboards",
+     "dashboard"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "description": "string",
+     "pinned": "boolean",
+     "created_at": "string",
+     "created_by": null,
+     "last_accessed_at": "string",
+     "last_viewed_at": "string",
+     "is_shared": "boolean",
+     "deleted": "boolean",
+     "creation_mode": null,
+     "tags": "array",
+     "restriction_level": null,
+     "effective_restriction_level": null,
+     "effective_privilege_level": null,
+     "user_access_level": "string",
+     "access_control_version": "string",
+     "last_refresh": "string",
+     "team_id": "integer",
+     "filters": "object",
+     "variables": "object",
+     "breakdown_colors": null,
+     "data_color_theme_id": "integer",
+     "persisted_filters": "object",
+     "persisted_variables": "object",
+     "quick_filter_ids": "array",
+     "tiles": "array",
+     "use_template": "string",
+     "use_dashboard": "integer",
+     "delete_insights": "boolean",
+     "_create_in_folder": "string",
+     "key": "string",
+     "active": "boolean",
+     "updated_at": "string",
+     "version": "integer",
+     "last_modified_by": null,
+     "ensure_experience_continuity": "boolean",
+     "experiment_set": "array",
+     "experiment_set_metadata": "array",
+     "surveys": "object",
+     "features": "object",
+     "rollback_conditions": null,
+     "performed_rollback": "boolean",
+     "can_edit": "boolean",
+     "evaluation_contexts": "array",
+     "usage_dashboard": "integer",
+     "analytics_dashboards": "array",
+     "has_enriched_analytics": "boolean",
+     "creation_context": null,
+     "is_remote_configuration": "boolean",
+     "has_encrypted_payloads": "boolean",
+     "status": "string",
+     "evaluation_runtime": null,
+     "bucketing_identifier": null,
+     "last_called_at": "string",
+     "_should_create_usage_dashboard": "boolean",
+     "is_used_in_replay_settings": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/posthog-openapi.yml#DELETE /api/environments/{environment_id}/dashboards/{id}/",
+     "openapi/_original/posthog-openapi.yml#DELETE /api/projects/{project_id}/dashboards/{id}/",
+     "openapi/_original/posthog-openapi.yml#GET /api/environments/{environment_id}/dashboards/",
+     "openapi/_original/posthog-openapi.yml#GET /api/environments/{environment_id}/dashboards/{id}/",
+     "openapi/_original/posthog-openapi.yml#GET /api/projects/{project_id}/dashboards/",
+     "openapi/_original/posthog-openapi.yml#GET /api/projects/{project_id}/dashboards/{id}/",
+     "openapi/_original/posthog-openapi.yml#PATCH /api/environments/{environment_id}/dashboards/{id}/",
+     "openapi/_original/posthog-openapi.yml#PATCH /api/projects/{project_id}/dashboards/{id}/",
+     "openapi/_original/posthog-openapi.yml#POST /api/environments/{environment_id}/dashboards/",
+     "openapi/_original/posthog-openapi.yml#POST /api/projects/{project_id}/dashboards/",
+     "openapi/_original/posthog-openapi.yml#POST /api/projects/{project_id}/feature_flags/{id}/dashboard/",
+     "openapi/_original/posthog-openapi.yml#PUT /api/environments/{environment_id}/dashboards/{id}/"
+    ]
+   },
+   "umami": {
+    "segments": [
+     "dashboard"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "createdAt": "string",
+     "description": "string",
+     "id": "string",
+     "name": "string",
+     "parameters": null,
+     "teamId": "string",
+     "type": "string",
+     "updatedAt": "string",
+     "userId": "string"
+    },
+    "evidence": [
+     "openapi/_original/umami-openapi.json#GET /api/dashboard",
+     "openapi/_original/umami-openapi.json#POST /api/dashboard",
+     "openapi/_original/umami-openapi.yml#GET /api/dashboard",
+     "openapi/_original/umami-openapi.yml#POST /api/dashboard"
+    ]
+   }
+  },
+  "funnel": {
+   "amplitude": {
+    "segments": [
+     "funnels"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "data": "object"
+    },
+    "evidence": [
+     "openapi/_original/amplitude-dashboard-rest-api-openapi.yml#GET /api/2/funnels"
+    ]
+   },
+   "mixpanel": {
+    "segments": [
+     "funnels"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "meta": "object"
+    },
+    "evidence": [
+     "openapi/_original/mixpanel-query-openapi.yml#GET /funnels"
+    ]
+   },
+   "openpanel": {
+    "segments": [
+     "funnel"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/openpanel-openapi.yml#GET /insights/{projectId}/funnel"
+    ]
+   },
+   "pirsch": {
+    "segments": [
+     "funnel"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "domain_id": "string",
+     "name": "string",
+     "steps": "array"
+    },
+    "evidence": [
+     "openapi/_original/pirsch-pirsch-api-openapi.yml#DELETE /funnel",
+     "openapi/_original/pirsch-pirsch-api-openapi.yml#GET /funnel",
+     "openapi/_original/pirsch-pirsch-api-openapi.yml#GET /statistics/funnel",
+     "openapi/_original/pirsch-pirsch-api-openapi.yml#POST /funnel"
+    ]
+   },
+   "posthog": {
+    "segments": [
+     "funnel"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "distinct_ids": "array",
+     "properties": null,
+     "created_at": "string",
+     "uuid": "string",
+     "last_seen_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/posthog-openapi.yml#GET /api/environments/{environment_id}/persons/funnel/",
+     "openapi/_original/posthog-openapi.yml#GET /api/projects/{project_id}/persons/funnel/",
+     "openapi/_original/posthog-openapi.yml#POST /api/environments/{environment_id}/persons/funnel/",
+     "openapi/_original/posthog-openapi.yml#POST /api/projects/{project_id}/persons/funnel/"
+    ]
+   },
+   "smartlook": {
+    "segments": [
+     "funnels"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "totalCount": "number",
+     "funnels": "array",
+     "pagination": "object",
+     "_links": "object",
+     "computation": "object",
+     "funnel": "object"
+    },
+    "evidence": [
+     "openapi/_original/smartlook-rest-api-openapi.yml#GET /api/v1/funnels",
+     "openapi/_original/smartlook-rest-api-openapi.yml#GET /api/v1/funnels/{funnelId}"
+    ]
+   },
+   "swetrix": {
+    "segments": [
+     "funnel",
+     "funnels"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "pid": "string",
+     "steps": "array",
+     "page": "string",
+     "count": "integer",
+     "dropoff": "integer",
+     "conversionRate": "number"
+    },
+    "evidence": [
+     "openapi/_original/swetrix-admin-api-openapi.yml#GET /v1/project/funnels/{pid}",
+     "openapi/_original/swetrix-admin-api-openapi.yml#PATCH /v1/project/funnel",
+     "openapi/_original/swetrix-admin-api-openapi.yml#POST /v1/project/funnel",
+     "openapi/_original/swetrix-statistics-api-openapi.yml#GET /v1/log/funnel"
+    ]
+   },
+   "treasure-data": {
+    "segments": [
+     "funnels"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "audienceId": "string",
+     "segmentFolderId": "string",
+     "name": "string",
+     "population": "integer",
+     "description": "string",
+     "numSyndications": "integer",
+     "needToRunWorkflow": "boolean",
+     "stages": "array",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "createdBy": "object",
+     "updatedBy": "object",
+     "type": "string",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/treasure-data-cdp-api-openapi.yml#DELETE /audiences/{audienceId}/funnels/{funnelId}",
+     "openapi/_original/treasure-data-cdp-api-openapi.yml#DELETE /entities/funnels/{id}",
+     "openapi/_original/treasure-data-cdp-api-openapi.yml#GET /audiences/{audienceId}/funnels",
+     "openapi/_original/treasure-data-cdp-api-openapi.yml#GET /audiences/{audienceId}/funnels/{funnelId}",
+     "openapi/_original/treasure-data-cdp-api-openapi.yml#GET /entities/funnels/{id}",
+     "openapi/_original/treasure-data-cdp-api-openapi.yml#GET /entities/parent_segments/{parentSegmentId}/funnels",
+     "openapi/_original/treasure-data-cdp-api-openapi.yml#PATCH /entities/funnels/{id}",
+     "openapi/_original/treasure-data-cdp-api-openapi.yml#POST /audiences/{audienceId}/funnels",
+     "openapi/_original/treasure-data-cdp-api-openapi.yml#POST /entities/funnels",
+     "openapi/_original/treasure-data-cdp-api-openapi.yml#PUT /audiences/{audienceId}/funnels/{funnelId}"
+    ]
+   },
+   "umami": {
+    "segments": [
+     "funnels"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "count": "number",
+     "data": "array",
+     "isCapped": "boolean",
+     "orderBy": "string",
+     "page": "number",
+     "pageSize": "number",
+     "search": "string",
+     "sortDescending": "boolean",
+     "ok": null,
+     "description": "string",
+     "name": "string",
+     "parameters": "object"
+    },
+    "evidence": [
+     "openapi/_original/umami-openapi.json#DELETE /api/websites/{websiteId}/funnels/{funnelId}",
+     "openapi/_original/umami-openapi.json#GET /api/websites/{websiteId}/funnels",
+     "openapi/_original/umami-openapi.json#GET /api/websites/{websiteId}/funnels/{funnelId}",
+     "openapi/_original/umami-openapi.json#POST /api/websites/{websiteId}/funnels",
+     "openapi/_original/umami-openapi.json#POST /api/websites/{websiteId}/funnels/{funnelId}",
+     "openapi/_original/umami-openapi.yml#DELETE /api/websites/{websiteId}/funnels/{funnelId}",
+     "openapi/_original/umami-openapi.yml#GET /api/websites/{websiteId}/funnels",
+     "openapi/_original/umami-openapi.yml#GET /api/websites/{websiteId}/funnels/{funnelId}",
+     "openapi/_original/umami-openapi.yml#POST /api/websites/{websiteId}/funnels",
+     "openapi/_original/umami-openapi.yml#POST /api/websites/{websiteId}/funnels/{funnelId}"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "adobe-analytics",
+    "ahrefs",
+    "ai-squared",
+    "airship",
+    "amperity",
+    "amplitude",
+    "applike",
+    "autoleadstar",
+    "bloomreach",
+    "blueconic",
+    "bluecore",
+    "blueshift",
+    "boom-ai",
+    "clix-so",
+    "connskill-com",
+    "contentsquare",
+    "cordial",
+    "counter-dev",
+    "crossenagage",
+    "customer-io",
+    "das-technology",
+    "emarsys",
+    "emitwise",
+    "evermuse",
+    "freshpaint",
+    "fullstory",
+    "gainsight",
+    "goatcounter",
+    "google-analytics",
+    "google-analytics-4",
+    "heap",
+    "hightouch",
+    "immutable",
+    "incentivio",
+    "insider",
+    "insightera",
+    "jitsu",
+    "june",
+    "kissmetrics",
+    "knotch",
+    "leadspace",
+    "localytics",
+    "logrocket",
+    "lucent",
+    "lucidya-ltd",
+    "lytics",
+    "mapp",
+    "mixpanel",
+    "moengage",
+    "mparticle",
+    "navattic",
+    "observepoint",
+    "openpanel",
+    "ortto",
+    "pendoio",
+    "pirsch",
+    "plausible",
+    "posthog",
+    "rudderstack",
+    "rybbit",
+    "segment",
+    "sendlane",
+    "sensors-data",
+    "similarweb",
+    "simon-data",
+    "simpleanalytics",
+    "sitecore",
+    "smartlook",
+    "snowplow",
+    "splio",
+    "sprig",
+    "statsig",
+    "swetrix",
+    "tealium",
+    "treasure-data",
+    "umami",
+    "zaius"
+   ],
+   "kebab-case": [
+    "ahrefs",
+    "airship",
+    "amperity",
+    "amplitude",
+    "applike",
+    "bloomreach",
+    "boom-ai",
+    "clix-so",
+    "connskill-com",
+    "contentsquare",
+    "crossenagage",
+    "hightouch",
+    "immutable",
+    "incentivio",
+    "insider",
+    "insightera",
+    "logrocket",
+    "lucidya-ltd",
+    "lytics",
+    "mapp",
+    "microsoft-clarity",
+    "mixpanel",
+    "moengage",
+    "observepoint",
+    "openpanel",
+    "ortto",
+    "plausible",
+    "posthog",
+    "rybbit",
+    "segment",
+    "sendlane",
+    "sensors-data",
+    "similarweb",
+    "sitecore",
+    "smartlook",
+    "snowplow",
+    "splio",
+    "swetrix",
+    "tealium",
+    "treasure-data",
+    "umami",
+    "zaius"
+   ],
+   "snake_case": [
+    "adobe-analytics",
+    "ai-squared",
+    "airship",
+    "blueshift",
+    "customer-io",
+    "emarsys",
+    "fullstory",
+    "gainsight",
+    "heap",
+    "hightouch",
+    "insider",
+    "knotch",
+    "lucidya-ltd",
+    "moengage",
+    "openpanel",
+    "posthog",
+    "segment",
+    "sensors-data",
+    "splio",
+    "statsig",
+    "treasure-data",
+    "trubrics"
+   ],
+   "camelCase": [
+    "adobe-analytics",
+    "blueconic",
+    "das-technology",
+    "emarsys",
+    "gainsight",
+    "google-analytics",
+    "google-analytics-4",
+    "incentivio",
+    "insider",
+    "mapp",
+    "moengage",
+    "pendoio",
+    "posthog",
+    "similarweb"
+   ],
+   "other": [
+    "amplitude",
+    "clix-so",
+    "emarsys",
+    "google-analytics",
+    "google-analytics-4",
+    "incentivio",
+    "lytics",
+    "matomo",
+    "pendoio",
+    "sitecore",
+    "umami",
+    "zaius"
+   ],
+   "PascalCase": [
+    "amplitude",
+    "bloomreach",
+    "das-technology",
+    "gainsight",
+    "pendoio"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "adobe-analytics",
+    "ahrefs",
+    "ai-squared",
+    "amperity",
+    "amplitude",
+    "autoleadstar",
+    "bloomreach",
+    "blueconic",
+    "blueshift",
+    "boom-ai",
+    "connskill-com",
+    "contentsquare",
+    "cordial",
+    "counter-dev",
+    "crossenagage",
+    "customer-io",
+    "das-technology",
+    "emarsys",
+    "evermuse",
+    "fullstory",
+    "gainsight",
+    "goatcounter",
+    "google-analytics",
+    "google-analytics-4",
+    "hightouch",
+    "immutable",
+    "incentivio",
+    "insider",
+    "insightera",
+    "jitsu",
+    "kissmetrics",
+    "knotch",
+    "localytics",
+    "logrocket",
+    "lucent",
+    "lucidya-ltd",
+    "lytics",
+    "mapp",
+    "matomo",
+    "microsoft-clarity",
+    "mixpanel",
+    "moengage",
+    "observepoint",
+    "openpanel",
+    "pirsch",
+    "plausible",
+    "posthog",
+    "rybbit",
+    "segment",
+    "sendlane",
+    "sensors-data",
+    "similarweb",
+    "simon-data",
+    "simpleanalytics",
+    "sitecore",
+    "smartlook",
+    "snowplow",
+    "splio",
+    "sprig",
+    "statsig",
+    "swetrix",
+    "tealium",
+    "treasure-data",
+    "umami",
+    "zaius"
+   ],
+   "snake_case": [
+    "adobe-analytics",
+    "ahrefs",
+    "ai-squared",
+    "amperity",
+    "amplitude",
+    "autoleadstar",
+    "bloomreach",
+    "blueconic",
+    "blueshift",
+    "boom-ai",
+    "connskill-com",
+    "cordial",
+    "customer-io",
+    "emarsys",
+    "fullstory",
+    "goatcounter",
+    "google-analytics",
+    "immutable",
+    "localytics",
+    "lucidya-ltd",
+    "lytics",
+    "mapp",
+    "matomo",
+    "mixpanel",
+    "moengage",
+    "mparticle",
+    "openpanel",
+    "pirsch",
+    "posthog",
+    "rybbit",
+    "sensors-data",
+    "similarweb",
+    "simpleanalytics",
+    "sitecore",
+    "splio",
+    "sprig",
+    "tealium",
+    "treasure-data",
+    "zaius"
+   ],
+   "camelCase": [
+    "adobe-analytics",
+    "amplitude",
+    "blueconic",
+    "blueshift",
+    "boom-ai",
+    "connskill-com",
+    "cordial",
+    "crossenagage",
+    "das-technology",
+    "emarsys",
+    "gainsight",
+    "google-analytics",
+    "google-analytics-4",
+    "hightouch",
+    "immutable",
+    "incentivio",
+    "insider",
+    "jitsu",
+    "lytics",
+    "mapp",
+    "matomo",
+    "microsoft-clarity",
+    "mixpanel",
+    "moengage",
+    "observepoint",
+    "openpanel",
+    "posthog",
+    "segment",
+    "sitecore",
+    "smartlook",
+    "swetrix",
+    "tealium",
+    "treasure-data",
+    "umami"
+   ],
+   "other": [
+    "ai-squared",
+    "bloomreach",
+    "blueshift",
+    "cordial",
+    "das-technology",
+    "emarsys",
+    "google-analytics",
+    "matomo",
+    "posthog",
+    "segment",
+    "treasure-data",
+    "zaius"
+   ],
+   "PascalCase": [
+    "das-technology",
+    "goatcounter",
+    "insider",
+    "similarweb"
+   ],
+   "kebab-case": [
+    "cordial",
+    "google-analytics",
+    "incentivio"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "adobe-analytics",
+    "ahrefs",
+    "amperity",
+    "amplitude",
+    "bloomreach",
+    "blueshift",
+    "boom-ai",
+    "connskill-com",
+    "contentsquare",
+    "crossenagage",
+    "customer-io",
+    "das-technology",
+    "emarsys",
+    "evermuse",
+    "fullstory",
+    "gainsight",
+    "goatcounter",
+    "hightouch",
+    "kissmetrics",
+    "logrocket",
+    "lucent",
+    "lytics",
+    "mapp",
+    "matomo",
+    "mixpanel",
+    "moengage",
+    "openpanel",
+    "pirsch",
+    "plausible",
+    "posthog",
+    "rybbit",
+    "segment",
+    "sendlane",
+    "similarweb",
+    "simpleanalytics",
+    "sitecore",
+    "smartlook",
+    "splio",
+    "sprig",
+    "statsig",
+    "treasure-data",
+    "umami",
+    "zaius"
+   ],
+   "page": [
+    "adobe-analytics",
+    "ai-squared",
+    "autoleadstar",
+    "bloomreach",
+    "blueshift",
+    "contentsquare",
+    "cordial",
+    "customer-io",
+    "das-technology",
+    "incentivio",
+    "insider",
+    "lucidya-ltd",
+    "mapp",
+    "moengage",
+    "observepoint",
+    "openpanel",
+    "posthog",
+    "rybbit",
+    "sendlane",
+    "simpleanalytics",
+    "sitecore",
+    "statsig",
+    "treasure-data",
+    "umami"
+   ],
+   "offset": [
+    "adobe-analytics",
+    "ahrefs",
+    "amplitude",
+    "connskill-com",
+    "crossenagage",
+    "customer-io",
+    "emarsys",
+    "gainsight",
+    "goatcounter",
+    "hightouch",
+    "kissmetrics",
+    "mapp",
+    "matomo",
+    "pirsch",
+    "posthog",
+    "similarweb",
+    "sitecore",
+    "umami"
+   ],
+   "page_size": [
+    "ai-squared",
+    "crossenagage",
+    "das-technology",
+    "gainsight",
+    "google-analytics",
+    "google-analytics-4",
+    "immutable",
+    "mapp",
+    "observepoint",
+    "posthog",
+    "sensors-data",
+    "sitecore",
+    "treasure-data",
+    "umami"
+   ],
+   "cursor": [
+    "amplitude",
+    "blueconic",
+    "blueshift",
+    "boom-ai",
+    "connskill-com",
+    "customer-io",
+    "evermuse",
+    "hightouch",
+    "logrocket",
+    "lucent",
+    "moengage",
+    "openpanel",
+    "posthog",
+    "sprig"
+   ],
+   "start": [
+    "amplitude",
+    "bloomreach",
+    "boom-ai",
+    "customer-io",
+    "goatcounter",
+    "lytics",
+    "openpanel",
+    "pirsch",
+    "simpleanalytics",
+    "sprig"
+   ],
+   "per_page": [
+    "autoleadstar",
+    "blueshift",
+    "cordial",
+    "insider",
+    "localytics",
+    "mapp",
+    "splio"
+   ],
+   "after": [
+    "goatcounter",
+    "hightouch",
+    "lytics",
+    "plausible",
+    "posthog",
+    "smartlook",
+    "splio"
+   ],
+   "before": [
+    "hightouch",
+    "lytics",
+    "plausible",
+    "posthog",
+    "smartlook",
+    "splio"
+   ],
+   "count": [
+    "amplitude",
+    "blueconic",
+    "gainsight",
+    "incentivio",
+    "mapp"
+   ],
+   "size": [
+    "adobe-analytics",
+    "mapp",
+    "observepoint"
+   ],
+   "page_token": [
+    "google-analytics",
+    "google-analytics-4",
+    "mapp"
+   ],
+   "max_results": [
+    "google-analytics",
+    "umami"
+   ],
+   "skip": [
+    "sitecore",
+    "swetrix"
+   ],
+   "top": [
+    "emarsys"
+   ],
+   "next": [
+    "segment"
+   ]
+  },
+  "property": {
+   "lower": [
+    "adobe-analytics",
+    "amperity",
+    "amplitude",
+    "autoleadstar",
+    "blueconic",
+    "blueshift",
+    "boom-ai",
+    "clix-so",
+    "crossenagage",
+    "customer-io",
+    "emarsys",
+    "freshpaint",
+    "fullstory",
+    "gainsight",
+    "google-analytics",
+    "heap",
+    "immutable",
+    "incentivio",
+    "june",
+    "kissmetrics",
+    "knotch",
+    "logrocket",
+    "lucidya-ltd",
+    "lytics",
+    "mapp",
+    "mixpanel",
+    "moengage",
+    "mparticle",
+    "openpanel",
+    "pirsch",
+    "plausible",
+    "posthog",
+    "rudderstack",
+    "rybbit",
+    "segment",
+    "sendlane",
+    "simon-data",
+    "simpleanalytics",
+    "smartlook",
+    "statsig",
+    "swetrix",
+    "tealium",
+    "treasure-data",
+    "umami",
+    "zaius"
+   ],
+   "camelCase": [
+    "adobe-analytics",
+    "amplitude",
+    "blueconic",
+    "boom-ai",
+    "customer-io",
+    "gainsight",
+    "google-analytics",
+    "incentivio",
+    "june",
+    "logrocket",
+    "openpanel",
+    "rudderstack",
+    "rybbit",
+    "segment",
+    "simon-data",
+    "smartlook",
+    "statsig",
+    "swetrix",
+    "tealium",
+    "treasure-data",
+    "umami"
+   ],
+   "snake_case": [
+    "amplitude",
+    "autoleadstar",
+    "blueshift",
+    "clix-so",
+    "customer-io",
+    "google-analytics",
+    "heap",
+    "kissmetrics",
+    "lucidya-ltd",
+    "lytics",
+    "moengage",
+    "mparticle",
+    "pirsch",
+    "posthog",
+    "rybbit",
+    "segment",
+    "sendlane",
+    "tealium",
+    "zaius"
+   ],
+   "other": [
+    "lytics",
+    "mixpanel",
+    "moengage",
+    "posthog",
+    "smartlook"
+   ],
+   "PascalCase": [
+    "gainsight"
+   ]
+  },
+  "path_param": {
+   "camelCase": [
+    "adobe-analytics",
+    "applike",
+    "autoleadstar",
+    "bloomreach",
+    "blueconic",
+    "boom-ai",
+    "clix-so",
+    "connskill-com",
+    "contentsquare",
+    "cordial",
+    "crossenagage",
+    "das-technology",
+    "emarsys",
+    "emitwise",
+    "evermuse",
+    "fullstory",
+    "gainsight",
+    "google-analytics",
+    "google-analytics-4",
+    "hightouch",
+    "incentivio",
+    "insider",
+    "leadspace",
+    "logrocket",
+    "lucent",
+    "lytics",
+    "mapp",
+    "mixpanel",
+    "moengage",
+    "observepoint",
+    "openpanel",
+    "pendoio",
+    "rybbit",
+    "segment",
+    "sendlane",
+    "sitecore",
+    "smartlook",
+    "snowplow",
+    "sprig",
+    "statsig",
+    "swetrix",
+    "tealium",
+    "treasure-data",
+    "umami",
+    "zaius"
+   ],
+   "lower": [
+    "adobe-analytics",
+    "ai-squared",
+    "amplitude",
+    "applike",
+    "autoleadstar",
+    "blueconic",
+    "bluecore",
+    "blueshift",
+    "boom-ai",
+    "cordial",
+    "crossenagage",
+    "customer-io",
+    "das-technology",
+    "fullstory",
+    "goatcounter",
+    "google-analytics",
+    "immutable",
+    "incentivio",
+    "insider",
+    "jitsu",
+    "kissmetrics",
+    "lucidya-ltd",
+    "lytics",
+    "mapp",
+    "moengage",
+    "mparticle",
+    "observepoint",
+    "openpanel",
+    "pendoio",
+    "plausible",
+    "posthog",
+    "rybbit",
+    "simpleanalytics",
+    "sitecore",
+    "smartlook",
+    "splio",
+    "statsig",
+    "swetrix",
+    "tealium",
+    "treasure-data",
+    "umami"
+   ],
+   "snake_case": [
+    "adobe-analytics",
+    "ai-squared",
+    "airship",
+    "amplitude",
+    "autoleadstar",
+    "bloomreach",
+    "bluecore",
+    "blueshift",
+    "clix-so",
+    "cordial",
+    "customer-io",
+    "emarsys",
+    "goatcounter",
+    "heap",
+    "immutable",
+    "kissmetrics",
+    "knotch",
+    "localytics",
+    "lucidya-ltd",
+    "lytics",
+    "moengage",
+    "mparticle",
+    "pendoio",
+    "plausible",
+    "posthog",
+    "similarweb",
+    "splio",
+    "tealium",
+    "treasure-data",
+    "zaius"
+   ],
+   "other": [
+    "blueshift",
+    "emarsys",
+    "lytics",
+    "moengage",
+    "posthog",
+    "treasure-data"
+   ],
+   "PascalCase": [
+    "adobe-analytics",
+    "moengage"
+   ],
+   "kebab-case": [
+    "amperity",
+    "insider"
+   ]
+  }
+ }
+}

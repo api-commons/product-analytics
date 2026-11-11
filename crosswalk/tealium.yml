@@ -1,0 +1,28 @@
+provider: tealium
+apis_io: https://apis.io/providers/tealium/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - event
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/tealium-collect-http-openapi.yml#GET /collect/event
+    - openapi/_original/tealium-collect-http-openapi.yml#POST /collect/event
+    - openapi/_original/tealium-collect-http-openapi.yml#POST /collect/regional/event
+  profile:
+    path_segment:
+    - profiles
+    properties:
+      traits:
+      - attributes
+      - properties
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/tealium-authentication-openapi.yml#POST /auth/accounts/{account}/profiles/{profile}
+    - openapi/_original/tealium-visitor-privacy-openapi.yml#DELETE /privacy/visitor/accounts/{account}/profiles/{profile}
+    - openapi/_original/tealium-visitor-privacy-openapi.yml#GET /privacy/visitor/accounts/{account}/profiles/{profile}
+    - openapi/_original/tealium-visitor-profile-openapi.yml#GET /customer/visitor/accounts/{account}/profiles/{profile}
+    - openapi/_original/tealium-visitor-profile-openapi.yml#GET /customer/visitor/historical/accounts/{account}/profiles/{profile}

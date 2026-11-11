@@ -1,0 +1,20 @@
+provider: mparticle
+apis_io: https://apis.io/providers/mparticle/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/mparticle-events-openapi-original.yml#POST /events
+  profile:
+    path_segment:
+    - identify
+    properties:
+      context: context
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/mparticle-identity-swagger-original.yml#POST /identify

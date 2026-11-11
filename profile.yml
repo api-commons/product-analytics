@@ -1,0 +1,628 @@
+context: product-analytics
+name: Product Analytics
+generated: '2026-11-10'
+version: 0.1.0-draft.20261110
+status: draft
+cohort:
+  tags:
+  - Customer Data Platform
+  - CDP
+  - Product Analytics
+  - Web Analytics
+  - Mobile Analytics
+  - Event Tracking
+  - Behavioral Analytics
+  - Digital Analytics
+  providers_with_harvested_openapi: 80
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  event:
+    segments_seen:
+      events: 25
+      track: 12
+      event: 10
+      batch: 2
+      collect: 2
+    providers_exposing: 40
+    providers_with_readable_schema: 35
+    operations:
+    - operation: POST collection
+      providers: 30
+      share: 0.75
+      tier: core
+    - operation: GET collection
+      providers: 16
+      share: 0.4
+      tier: extended
+    - operation: GET item
+      providers: 10
+      share: 0.25
+      tier: extended
+    - operation: DELETE item
+      providers: 3
+      share: 0.075
+      tier: long-tail
+    - operation: POST item
+      providers: 2
+      share: 0.05
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.025
+      tier: long-tail
+    properties:
+    - name: user_id
+      tier: extended
+      providers: 15
+      share: 0.429
+      type: string
+      spellings:
+      - userId
+      - user_id
+      - customer_id
+      - externalId
+      - personId
+      - user
+      - distinct_id
+      - distinctId
+    - name: properties
+      tier: extended
+      providers: 14
+      share: 0.4
+      type: object
+      spellings:
+      - properties
+      - context
+      - traits
+      - props
+    - name: timestamp
+      tier: extended
+      providers: 13
+      share: 0.371
+      type: string
+      spellings:
+      - timestamp
+      - receivedAt
+      - sentAt
+      - ts
+      - originalTimestamp
+    - name: id
+      tier: extended
+      providers: 12
+      share: 0.343
+      type: string
+      spellings:
+      - id
+      - messageId
+      - eventId
+    - name: name
+      tier: extended
+      providers: 12
+      share: 0.343
+      type: string
+      spellings:
+      - name
+      - event_name
+      - title
+      - eventName
+    - name: type
+      tier: extended
+      providers: 9
+      share: 0.257
+      type: string
+      spellings:
+      - type
+    - name: anonymous_id
+      tier: extended
+      providers: 8
+      share: 0.229
+      type: string
+      spellings:
+      - device_id
+      - anonymousId
+      - deviceId
+    long_tail_count: 208
+    long_tail_sample:
+    - created_at
+    - status
+    - event_type
+    - referrer
+    - session_id
+    - client_id
+    - email
+    - hostname
+    - ip
+    - description
+    - device
+    - error
+    - from_address
+    - integrations
+    - ip_address
+    - latitude
+    - longitude
+    - page_title
+    - payload
+    - request_id
+    - screen_height
+    - screen_width
+    - user_agent
+    - user_attributes
+    - accept_language
+    - account_id
+    - action
+    - actions
+    - aid
+    - api_key
+    - api_keys
+    - app_id
+    - app_instance_id
+    - application_info
+    - attribution_info
+    - average_duration_seconds
+    - average_occurrence_per_visitor
+    - batch_context
+    - batch_id
+    - bcc
+  profile:
+    segments_seen:
+      identify: 6
+      profiles: 4
+      people: 2
+      profile: 2
+      person: 1
+      engage: 1
+      persons: 1
+    providers_exposing: 15
+    providers_with_readable_schema: 13
+    operations:
+    - operation: POST collection
+      providers: 13
+      share: 0.867
+      tier: core
+    - operation: GET collection
+      providers: 6
+      share: 0.4
+      tier: extended
+    - operation: GET item
+      providers: 6
+      share: 0.4
+      tier: extended
+    - operation: DELETE item
+      providers: 4
+      share: 0.267
+      tier: extended
+    - operation: UPDATE item
+      providers: 2
+      share: 0.133
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.067
+      tier: long-tail
+    properties:
+    - name: traits
+      tier: core
+      providers: 8
+      share: 0.615
+      type: object
+      spellings:
+      - attributes
+      - traits
+      - properties
+      - $set
+    - name: user_id
+      tier: core
+      providers: 7
+      share: 0.538
+      type: string
+      spellings:
+      - userId
+      - anonymousId
+      - externalId
+      - user_id
+      - $distinct_id
+    - name: timestamp
+      tier: extended
+      providers: 5
+      share: 0.385
+      type: string
+      spellings:
+      - timestamp
+      - receivedAt
+      - sentAt
+      - originalTimestamp
+    - name: context
+      tier: extended
+      providers: 4
+      share: 0.308
+      type: object
+      spellings:
+      - context
+    - name: id
+      tier: extended
+      providers: 4
+      share: 0.308
+      type: string
+      spellings:
+      - messageId
+      - id
+      - uuid
+    - name: created_at
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: string
+      spellings:
+      - createdAt
+      - CreatedDate
+      - created_at
+    - name: name
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: string
+      spellings:
+      - name
+      - Title
+    - name: type
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: string
+      spellings:
+      - type
+    - name: updated_at
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: string
+      spellings:
+      - updatedAt
+      - ModifiedDate
+      - updated
+    long_tail_count: 96
+    long_tail_sample:
+    - email
+    - first_name
+    - first_seen_at
+    - integrations
+    - ip
+    - last_name
+    - request_id
+    - status
+    - timezone
+    - token
+    - account_id
+    - active
+    - add
+    - app_id
+    - append
+    - audiences
+    - badges
+    - bot_filtering_enabled
+    - campaign
+    - channel
+    - child_link
+    - client_sdk
+    - company_id
+    - company_name
+    - currency
+    - current_visit
+    - dates
+    - default_page
+    - delete
+    - distinct_ids
+    - e_commerce_tracking
+    - enhanced_e_commerce_tracking
+    - environment
+    - error
+    - error_code
+    - error_desc
+    - exclude_query_parameters
+    - failed_count
+    - failures
+    - flags
+  cohort:
+    segments_seen:
+      segments: 9
+      cohorts: 2
+      segment: 2
+      cohort: 2
+    providers_exposing: 14
+    providers_with_readable_schema: 12
+    operations:
+    - operation: GET collection
+      providers: 14
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 10
+      share: 0.714
+      tier: core
+    - operation: DELETE item
+      providers: 9
+      share: 0.643
+      tier: core
+    - operation: POST collection
+      providers: 7
+      share: 0.5
+      tier: core
+    - operation: UPDATE item
+      providers: 7
+      share: 0.5
+      tier: core
+    - operation: POST item
+      providers: 2
+      share: 0.143
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.143
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 9
+      share: 0.75
+      type: string
+      spellings:
+      - id
+    - name: name
+      tier: core
+      providers: 9
+      share: 0.75
+      type: string
+      spellings:
+      - name
+      - title
+    - name: description
+      tier: core
+      providers: 8
+      share: 0.667
+      type: string
+      spellings:
+      - description
+    - name: created_at
+      tier: core
+      providers: 7
+      share: 0.583
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - createdDate
+      - created
+    - name: filters
+      tier: extended
+      providers: 4
+      share: 0.333
+      type: object
+      spellings:
+      - definition
+      - conditions
+      - filters
+      - query
+    - name: updated_at
+      tier: extended
+      providers: 4
+      share: 0.333
+      type: string
+      spellings:
+      - modified
+      - updated_at
+      - updated
+      - updatedAt
+    - name: count
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: integer
+      spellings:
+      - size
+      - memberCount
+    - name: is_static
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: string
+      spellings:
+      - type
+      - is_static
+    - name: tags
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: array
+      spellings:
+      - tags
+    long_tail_count: 115
+    long_tail_sample:
+    - deleted
+    - groups
+    - kind
+    - owner
+    - status
+    - account_id
+    - admin_email
+    - admin_id
+    - advanced_settings
+    - aid
+    - app_id
+    - archived
+    - aspects
+    - assignee
+    - ast
+    - author
+    - author_id
+    - category
+    - cohort_type
+    - confidence
+    - content
+    - create_in_folder
+    - create_static_person_ids
+    - created_by
+    - daily_evaluation_hour
+    - datemath_calc
+    - deduplicate_id
+    - deleted_status
+    - errors_calculating
+    - evaluation_cadence
+    - experiment_set
+    - expired_status
+    - external_issues
+    - fetched
+    - field_changes_fields
+    - fields
+    - filter_expression
+    - first_seen
+    - forward_datemath
+    - identities
+  dashboard:
+    segments_seen:
+      dashboards: 3
+      dashboard: 2
+    providers_exposing: 4
+    providers_with_readable_schema: 3
+    operations:
+    - operation: GET collection
+      providers: 4
+      share: 1.0
+      tier: core
+    - operation: POST collection
+      providers: 2
+      share: 0.5
+      tier: long-tail
+    - operation: DELETE item
+      providers: 1
+      share: 0.25
+      tier: long-tail
+    - operation: GET item
+      providers: 1
+      share: 0.25
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.25
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 3
+      share: 1.0
+      type: string
+      spellings:
+      - id
+      - _id
+    - name: name
+      tier: core
+      providers: 3
+      share: 1.0
+      type: string
+      spellings:
+      - name
+    long_tail_count: 58
+    long_tail_sample:
+    - created_at
+    - description
+    - team_id
+    - updated_at
+    - access_control_version
+    - active
+    - analytics_dashboards
+    - breakdown_colors
+    - bucketing_identifier
+    - can_edit
+    - create_in_folder
+    - created_by
+    - creation_context
+    - creation_mode
+    - data_color_theme_id
+    - delete_insights
+    - deleted
+    - effective_privilege_level
+    - effective_restriction_level
+    - ensure_experience_continuity
+    - evaluation_contexts
+    - evaluation_runtime
+    - experiment_set
+    - experiment_set_metadata
+    - features
+    - filters
+    - has_encrypted_payloads
+    - has_enriched_analytics
+    - is_remote_configuration
+    - is_shared
+    - is_used_in_replay_settings
+    - key
+    - last_accessed_at
+    - last_called_at
+    - last_modified_by
+    - last_refresh
+    - last_viewed_at
+    - parameters
+    - performed_rollback
+    - persisted_filters
+  funnel:
+    segments_seen:
+      funnels: 4
+      funnel: 3
+    providers_exposing: 7
+    providers_with_readable_schema: 6
+    operations:
+    - operation: GET collection
+      providers: 7
+      share: 1.0
+      tier: core
+    - operation: POST collection
+      providers: 3
+      share: 0.429
+      tier: extended
+    - operation: GET item
+      providers: 2
+      share: 0.286
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.143
+      tier: long-tail
+    - operation: DELETE item
+      providers: 1
+      share: 0.143
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.143
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - name
+    long_tail_count: 17
+    long_tail_sample:
+    - id
+    - computation
+    - created_at
+    - description
+    - distinct_ids
+    - domain_id
+    - is_capped
+    - last_seen_at
+    - ok
+    - order_by
+    - page_size
+    - pagination
+    - parameters
+    - properties
+    - search
+    - sort_descending
+    - steps

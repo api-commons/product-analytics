@@ -1,0 +1,14 @@
+provider: autoleadstar
+apis_io: https://apis.io/providers/autoleadstar/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    properties:
+      timestamp: timestamp
+      type: type
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/autoleadstar-fullpath-api-openapi.yml#GET /dealerships/{dealershipId}/shoppers/{id}/events

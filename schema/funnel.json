@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/product-analytics/main/schema/funnel.json",
+  "title": "Funnel",
+  "description": "The common funnel in Product Analytics, distilled from 6 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "name"
+      ]
+    }
+  },
+  "required": [],
+  "x-commons": {
+    "context": "product-analytics",
+    "concept": "funnel",
+    "providers": 6,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

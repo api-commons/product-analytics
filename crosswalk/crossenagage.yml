@@ -1,0 +1,17 @@
+provider: crossenagage
+apis_io: https://apis.io/providers/crossenagage/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    - track
+    properties:
+      id: id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/crossenagage-user-management-v1-apib2swagger.json#POST /events
+    - openapi/_original/crossenagage-user-management-v1-openapi.yml#POST /events
+    - openapi/_original/crossenagage-user-management-v2-apib2swagger.json#GET /users/track/{trackingId}
+    - openapi/_original/crossenagage-user-management-v2-openapi.yml#GET /users/track/{trackingId}

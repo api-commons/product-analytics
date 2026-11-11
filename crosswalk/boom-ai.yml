@@ -1,0 +1,55 @@
+provider: boom-ai
+apis_io: https://apis.io/providers/boom-ai/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    - batch
+    properties:
+      user_id:
+      - externalId
+      - personId
+      properties: properties
+      timestamp:
+      - timestamp
+      - receivedAt
+      id: eventId
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/boom-ai-openapi.json#GET /api/v1/cdp/events
+    - openapi/_original/boom-ai-openapi.json#GET /api/v1/cdp/events/{externalId}
+    - openapi/_original/boom-ai-openapi.json#POST /api/v1/cdp/events
+    - openapi/_original/boom-ai-openapi.json#POST /api/v1/cdp/events/batch
+  profile:
+    path_segment:
+    - people
+    properties:
+      traits: attributes
+      user_id: externalId
+      created_at: createdAt
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/boom-ai-openapi.json#DELETE /api/v1/cdp/people/{externalId}
+    - openapi/_original/boom-ai-openapi.json#GET /api/v1/cdp/people
+    - openapi/_original/boom-ai-openapi.json#GET /api/v1/cdp/people/{externalId}
+    - openapi/_original/boom-ai-openapi.json#POST /api/v1/cdp/people
+  cohort:
+    path_segment:
+    - segments
+    properties:
+      id: id
+      name: name
+      description: description
+      created_at: createdAt
+      count: memberCount
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/boom-ai-openapi.json#DELETE /api/v1/segments/{slug}
+    - openapi/_original/boom-ai-openapi.json#GET /api/v1/segments
+    - openapi/_original/boom-ai-openapi.json#GET /api/v1/segments/{slug}
+    - openapi/_original/boom-ai-openapi.json#PATCH /api/v1/segments/{slug}
+    - openapi/_original/boom-ai-openapi.json#POST /api/v1/segments

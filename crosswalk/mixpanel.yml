@@ -1,0 +1,29 @@
+provider: mixpanel
+apis_io: https://apis.io/providers/mixpanel/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - track
+    properties:
+      properties: properties
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/mixpanel-ingestion-openapi.yml#POST /track
+  profile:
+    path_segment:
+    - engage
+    properties:
+      traits: $set
+      user_id: $distinct_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/mixpanel-ingestion-openapi.yml#POST /engage
+  funnel:
+    path_segment:
+    - funnels
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/mixpanel-query-openapi.yml#GET /funnels

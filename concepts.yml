@@ -1,0 +1,74 @@
+context: product-analytics
+name: Product Analytics
+intro: >-
+  The common product-analytics vocabulary -- the events a product tracks, the people and
+  profiles they belong to, the cohorts those people are grouped into, and the funnels,
+  insights and dashboards built on top -- distilled from the APIs that already exist.
+tags: [Customer Data Platform, CDP, Product Analytics, Web Analytics, Mobile Analytics, Event Tracking, Behavioral Analytics, Digital Analytics]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, message_id, insert_id, $insert_id]
+  created_at: [created, created_date, date_created, create_time, creation_date, created_on]
+  updated_at: [updated, updated_date, modified_at, last_modified, date_modified, update_time, modified_date, modified, last_modified_at]
+  metadata: [meta_data, custom_fields, custom, attributes]
+  name: [title, display_name, label, event_name, event]
+  description: [notes, note, details]
+  user_id: [distinct_id, userId, user, external_id, person_id, profile_id, customer_id, uid, anonymous_id, device_id]
+  timestamp: [time, event_time, occurred_at, sent_at, received_at, ts, datetime, original_timestamp]
+
+concepts:
+  event:
+    segments: [events, event, track, tracks, batch@track|events, capture, collect, "i@v1|v2", logs@events]
+    aliases:
+      properties: [event_properties, props, params, attributes, data, context, traits]
+      session_id: [session, sessionId, session_key]
+      anonymous_id: [anonymousId, device_id, cookie_id, distinct_id_anon]
+  profile:
+    requires: [event]
+    segments: [profiles, profile, persons, person, people, users@analytics|projects|apps, identify, identities@analytics|profiles, engage]
+    aliases:
+      traits: [properties, user_properties, attributes, $set, data]
+      email: [$email, email_address]
+      first_seen_at: [first_seen, created, $created, first_event_at]
+      last_seen_at: [last_seen, last_event_at, last_active]
+  cohort:
+    requires: [event]
+    segments: [cohorts, cohort, segments, segment, audiences@analytics|projects]
+    aliases:
+      filters: [definition, conditions, criteria, rules, query]
+      count: [size, member_count, user_count, people_count]
+      is_static: [static, is_dynamic, type]
+  dashboard:
+    requires: [event]
+    segments: [dashboards, dashboard, boards@analytics]
+    aliases:
+      tiles: [widgets, charts, items, cards, insights]
+      is_shared: [shared, sharing, is_public]
+  # insight was measured and dropped: 4 providers, no shared property, and half were
+  # web-analytics chart endpoints rather than saved analyses.
+  funnel:
+    requires: [event]
+    segments: [funnels, funnel]
+    aliases:
+      steps: [events, step_definitions, stages]
+      conversion_window: [window, conversion_window_days, time_window]
+
+findings:
+  - "An event agrees on nothing outright: user, properties and timestamp sit at 37-43%.
+    Tracking APIs share a shape -- event name, properties, user, time -- but publish it as a
+    request body with names that vary (event, event_type, name; distinct_id, userId), and
+    several document the endpoint without a schema at all."
+  - "A cohort agrees on id, name, description and created_at; segments and cohorts are one
+    concept across CDPs and analytics tools."
+  - "A profile agrees on a user id and its traits -- the Segment `identify` model."
+decisions:
+  - "The bare Analytics tag is not used: it covers business intelligence, data platforms and
+    market analytics, not product event tracking."
+  - "`track`, `capture`, `collect` and batch-beneath-track are events; `identify`, persons,
+    people and profiles are profiles; segments are cohorts."
+  - "Everything but the event `requires: [event]`, so a marketing tool's `/segments` counts only
+    if it also tracks events."

@@ -1,0 +1,66 @@
+provider: customer-io
+apis_io: https://apis.io/providers/customer-io/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    - track
+    properties:
+      user_id: userId
+      properties:
+      - properties
+      - context
+      timestamp:
+      - timestamp
+      - receivedAt
+      - sentAt
+      - originalTimestamp
+      id: messageId
+      type: type
+      anonymous_id: device_id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/customer-io-app-api-openapi.json#POST /v1/data_index/events
+    - openapi/_original/customer-io-journeys-api-openapi.json#POST /api/v1/customers/{identifier}/events
+    - openapi/_original/customer-io-journeys-api-openapi.json#POST /api/v1/events
+    - openapi/_original/customer-io-journeys-api-openapi.json#POST /api/v1/push/events
+    - openapi/_original/customer-io-journeys-api-openapi.json#POST /v1/data_index/events
+  profile:
+    path_segment:
+    - identify
+    properties:
+      traits: traits
+      user_id:
+      - userId
+      - anonymousId
+      timestamp:
+      - receivedAt
+      - sentAt
+      - originalTimestamp
+      - timestamp
+      id: messageId
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/customer-io-pipelines-api-openapi.json#POST /identify
+  cohort:
+    path_segment:
+    - segments
+    properties:
+      id: id
+      name: name
+      description: description
+      created_at: created_at
+      filters: conditions
+      updated_at: updated_at
+      is_static: type
+      tags: tags
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/customer-io-app-api-openapi.json#DELETE /v1/segments/{segment_id}
+    - openapi/_original/customer-io-app-api-openapi.json#GET /v1/customers/{customer_id}/segments
+    - openapi/_original/customer-io-app-api-openapi.json#GET /v1/segments
+    - openapi/_original/customer-io-app-api-openapi.json#GET /v1/segments/{segment_id}
+    - openapi/_original/customer-io-app-api-openapi.json#POST /v1/segments

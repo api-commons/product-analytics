@@ -1,0 +1,13 @@
+provider: simpleanalytics
+apis_io: https://apis.io/providers/simpleanalytics/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    properties:
+      type: type
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/simpleanalytics-openapi.yml#POST /events

@@ -1,0 +1,895 @@
+[
+ {
+  "slug": "adobe-analytics",
+  "specs": [
+   "openapi/_original/adobe-analytics-api-openapi.yml",
+   "openapi/_original/adobe-analytics-bulk-data-insertion-api-openapi.yml",
+   "openapi/_original/adobe-analytics-classification-api-openapi.json",
+   "openapi/_original/adobe-analytics-cloud-locations-api-openapi.json",
+   "openapi/_original/adobe-analytics-component-migration-api-openapi.json",
+   "openapi/_original/adobe-analytics-data-feeds-api-openapi.json",
+   "openapi/_original/adobe-analytics-data-repair-api-openapi.yml",
+   "openapi/_original/adobe-analytics-data-sources-api-openapi.json",
+   "openapi/_original/adobe-analytics-data-warehouse-api-openapi.json",
+   "openapi/_original/adobe-analytics-marketing-channels-api-openapi.json",
+   "openapi/_original/adobe-analytics-report-suites-admin-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "ahrefs",
+  "specs": [
+   "openapi/_original/ahrefs-batch-analysis-openapi.json",
+   "openapi/_original/ahrefs-brand-radar-openapi.json",
+   "openapi/_original/ahrefs-gsc-openapi.json",
+   "openapi/_original/ahrefs-keywords-explorer-openapi.json",
+   "openapi/_original/ahrefs-management-openapi.json",
+   "openapi/_original/ahrefs-openapi-original.json",
+   "openapi/_original/ahrefs-public-openapi.json",
+   "openapi/_original/ahrefs-rank-tracker-openapi.json",
+   "openapi/_original/ahrefs-serp-overview-openapi.json",
+   "openapi/_original/ahrefs-site-audit-openapi.json",
+   "openapi/_original/ahrefs-site-explorer-openapi.json",
+   "openapi/_original/ahrefs-social-media-openapi.json",
+   "openapi/_original/ahrefs-spec-index.json",
+   "openapi/_original/ahrefs-subscription-info-openapi.json",
+   "openapi/_original/ahrefs-web-analytics-openapi.json"
+  ]
+ },
+ {
+  "slug": "ai-squared",
+  "specs": [
+   "openapi/_original/ai-squared-openapi.yml",
+   "openapi/_original/check_connection.yaml",
+   "openapi/_original/connector_definition.yaml",
+   "openapi/_original/connector_definitions.yaml",
+   "openapi/_original/create-model.yaml",
+   "openapi/_original/create_catalog.yaml",
+   "openapi/_original/create_connector.yaml",
+   "openapi/_original/create_sync.yaml",
+   "openapi/_original/delete-model.yaml",
+   "openapi/_original/delete_connector.yaml",
+   "openapi/_original/delete_sync.yaml",
+   "openapi/_original/discover.yaml",
+   "openapi/_original/get-all-models.yaml",
+   "openapi/_original/get-model.yaml",
+   "openapi/_original/get_connector.yaml",
+   "openapi/_original/get_sync_records.yaml",
+   "openapi/_original/get_sync_run.yaml",
+   "openapi/_original/get_sync_runs.yaml",
+   "openapi/_original/get_syncs.yaml",
+   "openapi/_original/list_connectors.yaml",
+   "openapi/_original/manual_sync_cancel.yaml",
+   "openapi/_original/manual_sync_trigger.yaml",
+   "openapi/_original/query_source.yaml",
+   "openapi/_original/show_sync.yaml",
+   "openapi/_original/sync_configuration.yaml",
+   "openapi/_original/test_sync.yaml",
+   "openapi/_original/update-model.yaml",
+   "openapi/_original/update_catalog.yaml",
+   "openapi/_original/update_connector.yaml",
+   "openapi/_original/update_sync.yaml"
+  ]
+ },
+ {
+  "slug": "airship",
+  "specs": [
+   "openapi/_original/airship-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amperity",
+  "specs": [
+   "openapi/_original/amperity-control-plane-2024-04-01-openapi.json",
+   "openapi/_original/amperity-control-plane-unstable-openapi.json"
+  ]
+ },
+ {
+  "slug": "amplitude",
+  "specs": [
+   "openapi/_original/amplitude-behavioral-cohorts-api-openapi.yml",
+   "openapi/_original/amplitude-chart-annotations-api-openapi.yml",
+   "openapi/_original/amplitude-dashboard-rest-api-openapi.yml",
+   "openapi/_original/amplitude-dsar-api-openapi.yml",
+   "openapi/_original/amplitude-experiment-evaluation-api-openapi.yml",
+   "openapi/_original/amplitude-experiment-management-api-openapi.yml",
+   "openapi/_original/amplitude-http-v2-api-openapi.yml",
+   "openapi/_original/amplitude-scim-api-openapi.yml",
+   "openapi/_original/amplitude-taxonomy-api-openapi.yml",
+   "openapi/_original/amplitude-user-profile-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "applike",
+  "specs": [
+   "openapi/_original/applike-justtrack-app-events-openapi.yml",
+   "openapi/_original/applike-justtrack-management-openapi.yml"
+  ]
+ },
+ {
+  "slug": "autoleadstar",
+  "specs": [
+   "openapi/_original/autoleadstar-fullpath-api-openapi.yml",
+   "openapi/_original/autoleadstar-mcp-tools-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bloomreach",
+  "specs": [
+   "openapi/_original/bloomreach-data-hub-workspace-import-openapi.yml",
+   "openapi/_original/bloomreach-discovery-autosuggest-openapi.yml",
+   "openapi/_original/bloomreach-discovery-bestseller-openapi.yml",
+   "openapi/_original/bloomreach-discovery-catalog-management-openapi.yml",
+   "openapi/_original/bloomreach-discovery-content-search-openapi.yml",
+   "openapi/_original/bloomreach-discovery-email-widget-openapi.yml",
+   "openapi/_original/bloomreach-discovery-recommendations-pathways-openapi.yml",
+   "openapi/_original/bloomreach-discovery-search-category-openapi.yml"
+  ]
+ },
+ {
+  "slug": "blueconic",
+  "specs": [
+   "openapi/_original/blueconic-rest-api-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bluecore",
+  "specs": [
+   "openapi/_original/bluecore-transactional-legacy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "blueshift",
+  "specs": [
+   "openapi/_original/blueshift-openapi.json",
+   "openapi/_original/blueshift-openapi.yml"
+  ]
+ },
+ {
+  "slug": "boom-ai",
+  "specs": [
+   "openapi/_original/boom-ai-openapi.json"
+  ]
+ },
+ {
+  "slug": "clix-so",
+  "specs": [
+   "openapi/_original/clix-so-external-v1-openapi.json",
+   "openapi/_original/clix-so-openapi.yml"
+  ]
+ },
+ {
+  "slug": "connskill-com",
+  "specs": [
+   "openapi/_original/connskill-com-openapi.json",
+   "openapi/_original/connskill-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "contentsquare",
+  "specs": [
+   "openapi/_original/contentsquare-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cordial",
+  "specs": [
+   "openapi/_original/cordial-v1-openapi-original.json",
+   "openapi/_original/cordial-v2-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "counter-dev",
+  "specs": [
+   "openapi/_original/counter-dev-openapi.yml"
+  ]
+ },
+ {
+  "slug": "crossenagage",
+  "specs": [
+   "openapi/_original/crossenagage-file-attachments-v1-apib2swagger.json",
+   "openapi/_original/crossenagage-product-feed-openapi.yml",
+   "openapi/_original/crossenagage-product-feed-openapi_2.yml",
+   "openapi/_original/crossenagage-raw-export-v1-apib2swagger.json",
+   "openapi/_original/crossenagage-raw-export-v1-openapi.yml",
+   "openapi/_original/crossenagage-statistics-v1-apib2swagger.json",
+   "openapi/_original/crossenagage-statistics-v1-openapi.yml",
+   "openapi/_original/crossenagage-user-management-v1-apib2swagger.json",
+   "openapi/_original/crossenagage-user-management-v1-openapi.yml",
+   "openapi/_original/crossenagage-user-management-v2-apib2swagger.json",
+   "openapi/_original/crossenagage-user-management-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "customer-io",
+  "specs": [
+   "openapi/_original/customer-io-app-api-openapi.json",
+   "openapi/_original/customer-io-journeys-api-openapi.json",
+   "openapi/_original/customer-io-pipelines-api-openapi.json",
+   "openapi/_original/customer-io-reporting-webhooks-openapi.json",
+   "openapi/_original/customer-io-track-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "das-technology",
+  "specs": [
+   "openapi/_original/das-technology-daswebapi-v1-openapi.yml",
+   "openapi/_original/das-technology-daswebapi-v1-swagger.json",
+   "openapi/_original/das-technology-daswebapi-v2-openapi.yml",
+   "openapi/_original/das-technology-daswebapi-v2-swagger.json"
+  ]
+ },
+ {
+  "slug": "emarsys",
+  "specs": [
+   "openapi/_original/emarsys-accounts-openapi.yml",
+   "openapi/_original/emarsys-auto-import-profiles-openapi.yml",
+   "openapi/_original/emarsys-bulk-response-summary-openapi.yml",
+   "openapi/_original/emarsys-conditional-text-rules-openapi.yml",
+   "openapi/_original/emarsys-contact-and-email-data-openapi.yml",
+   "openapi/_original/emarsys-contact-lists-openapi.yml",
+   "openapi/_original/emarsys-contact-sources-openapi.yml",
+   "openapi/_original/emarsys-contacts-openapi.yml",
+   "openapi/_original/emarsys-email-campaign-lifecycle-openapi.yml",
+   "openapi/_original/emarsys-email-campaigns-openapi.yml",
+   "openapi/_original/emarsys-email-reporting-api-openapi.yml",
+   "openapi/_original/emarsys-email-templates-openapi.yml",
+   "openapi/_original/emarsys-events-openapi.yml",
+   "openapi/_original/emarsys-external-content-openapi.yml",
+   "openapi/_original/emarsys-fields-openapi.yml",
+   "openapi/_original/emarsys-forms-openapi.yml",
+   "openapi/_original/emarsys-keys-openapi.yml",
+   "openapi/_original/emarsys-media-database-openapi.yml",
+   "openapi/_original/emarsys-programs-openapi.yml",
+   "openapi/_original/emarsys-relational-data-openapi.yml",
+   "openapi/_original/emarsys-sections-openapi.yml",
+   "openapi/_original/emarsys-segments-openapi.yml",
+   "openapi/_original/emarsys-sms-partner-callbacks-openapi.yml",
+   "openapi/_original/emarsys-sms-partner-service-openapi.yml",
+   "openapi/_original/emarsys-tracked-links-openapi.yml"
+  ]
+ },
+ {
+  "slug": "emitwise",
+  "specs": [
+   "openapi/_original/emitwise-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "evermuse",
+  "specs": [
+   "openapi/_original/evermuse-ingest-v1-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "freshpaint",
+  "specs": [
+   "openapi/_original/freshpaint-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fullstory",
+  "specs": [
+   "openapi/_original/fullstory-segments-export-api-openapi.yml",
+   "openapi/_original/fullstory-server-api-openapi.yml",
+   "openapi/_original/fullstory-webhooks-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gainsight",
+  "specs": [
+   "openapi/_original/gainsight-cs-bulk-api-openapi.yml",
+   "openapi/_original/gainsight-cs-company-api-openapi.yml",
+   "openapi/_original/gainsight-cs-cta-api-openapi.yml",
+   "openapi/_original/gainsight-cs-custom-object-api-openapi.yml",
+   "openapi/_original/gainsight-cs-customer-goals-api-openapi.yml",
+   "openapi/_original/gainsight-cs-data-management-api-openapi.yml",
+   "openapi/_original/gainsight-cs-events-api-openapi.yml",
+   "openapi/_original/gainsight-cs-person-api-openapi.yml",
+   "openapi/_original/gainsight-cs-renewal-center-api-openapi.yml",
+   "openapi/_original/gainsight-cs-success-plan-api-openapi.yml",
+   "openapi/_original/gainsight-cs-task-and-playbook-api-openapi.yml",
+   "openapi/_original/gainsight-cs-timeline-api-openapi.yml",
+   "openapi/_original/gainsight-cs-user-management-api-openapi.yml",
+   "openapi/_original/gainsight-px-api-openapi.yml",
+   "openapi/_original/gainsight-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "goatcounter",
+  "specs": [
+   "openapi/_original/goatcounter-api-swagger20.json",
+   "openapi/_original/goatcounter-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-analytics",
+  "specs": [
+   "openapi/_original/google-analytics-admin-api.yaml",
+   "openapi/_original/google-analytics-data-api.yaml",
+   "openapi/_original/google-analytics-management-api-v3.yaml",
+   "openapi/_original/google-analytics-measurement-protocol.yaml",
+   "openapi/_original/google-analytics-reporting-api-v4.yaml",
+   "openapi/_original/google-analytics-user-deletion-api.yaml"
+  ]
+ },
+ {
+  "slug": "google-analytics-4",
+  "specs": [
+   "openapi/_original/google-analytics-4-admin-v1alpha-discovery.json",
+   "openapi/_original/google-analytics-4-admin-v1alpha-openapi.yml",
+   "openapi/_original/google-analytics-4-admin-v1beta-discovery.json",
+   "openapi/_original/google-analytics-4-admin-v1beta-openapi.yml",
+   "openapi/_original/google-analytics-4-data-v1alpha-discovery.json",
+   "openapi/_original/google-analytics-4-data-v1alpha-openapi.yml",
+   "openapi/_original/google-analytics-4-data-v1beta-discovery.json",
+   "openapi/_original/google-analytics-4-data-v1beta-openapi.yml"
+  ]
+ },
+ {
+  "slug": "heap",
+  "specs": [
+   "openapi/_original/heap-openapi.yml",
+   "openapi/_original/heap-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hightouch",
+  "specs": [
+   "openapi/_original/hightouch-openapi.json"
+  ]
+ },
+ {
+  "slug": "immutable",
+  "specs": [
+   "openapi/_original/immutable-audience-openapi.json",
+   "openapi/_original/immutable-zkevm-openapi.json"
+  ]
+ },
+ {
+  "slug": "incentivio",
+  "specs": [
+   "openapi/_original/incentivio-admin-api-openapi.json",
+   "openapi/_original/incentivio-admin-api-openapi.yml",
+   "openapi/_original/incentivio-mobile-api-openapi.json",
+   "openapi/_original/incentivio-mobile-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "insider",
+  "specs": [
+   "openapi/_original/insider-analytics-openapi.yml",
+   "openapi/_original/insider-architect-analytics-openapi.yml",
+   "openapi/_original/insider-catalog-openapi.yml",
+   "openapi/_original/insider-contact-openapi.yml",
+   "openapi/_original/insider-eureka-events-openapi.yml",
+   "openapi/_original/insider-eureka-search-openapi.yml",
+   "openapi/_original/insider-gateway-openapi.yml",
+   "openapi/_original/insider-live-activity-openapi.yml",
+   "openapi/_original/insider-mail-openapi.yml",
+   "openapi/_original/insider-mobile-openapi.yml",
+   "openapi/_original/insider-mobile-settings-openapi.yml",
+   "openapi/_original/insider-recommendation-openapi.yml",
+   "openapi/_original/insider-sms-openapi.yml",
+   "openapi/_original/insider-unification-openapi.yml",
+   "openapi/_original/insider-verify-openapi.yml",
+   "openapi/_original/insider-web-push-openapi.yml",
+   "openapi/_original/insider-whatsapp-openapi.yml"
+  ]
+ },
+ {
+  "slug": "insightera",
+  "specs": [
+   "openapi/_original/insightera-nlp-platform-openapi.json",
+   "openapi/_original/insightera-nlp-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "jitsu",
+  "specs": [
+   "openapi/_original/jitsu-openapi.yml"
+  ]
+ },
+ {
+  "slug": "june",
+  "specs": [
+   "openapi/_original/june-tracking-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kissmetrics",
+  "specs": [
+   "openapi/_original/kissmetrics-ab-test-queries.json",
+   "openapi/_original/kissmetrics-ad-hoc-query.json",
+   "openapi/_original/kissmetrics-cancel-a-query.json",
+   "openapi/_original/kissmetrics-export-status.json",
+   "openapi/_original/kissmetrics-export-to-csv.json",
+   "openapi/_original/kissmetrics-export-to-s3.json",
+   "openapi/_original/kissmetrics-fetch-events.json",
+   "openapi/_original/kissmetrics-fetch-products.json",
+   "openapi/_original/kissmetrics-fetch-properties.json",
+   "openapi/_original/kissmetrics-fetch-reports.json",
+   "openapi/_original/kissmetrics-people-count-query.json",
+   "openapi/_original/kissmetrics-people-search-group-query.json",
+   "openapi/_original/kissmetrics-people-search-identity-query.json",
+   "openapi/_original/kissmetrics-saved-metric-query.json",
+   "openapi/_original/kissmetrics-sql.json",
+   "openapi/_original/kissmetrics-v3queriesid.json",
+   "openapi/_original/kissmetrics-v3queriesreport.json"
+  ]
+ },
+ {
+  "slug": "knotch",
+  "specs": [
+   "openapi/_original/knotch-events-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "leadspace",
+  "specs": [
+   "openapi/_original/leadspace-enrichment-openapi.yml"
+  ]
+ },
+ {
+  "slug": "localytics",
+  "specs": [
+   "openapi/_original/localytics-campaigns-audiences-openapi.yml",
+   "openapi/_original/localytics-transactional-push-openapi.json"
+  ]
+ },
+ {
+  "slug": "logrocket",
+  "specs": [
+   "openapi/_original/logrocket-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lucent",
+  "specs": [
+   "openapi/_original/lucent-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "lucidya-ltd",
+  "specs": [
+   "openapi/_original/lucidya-ltd-ai-api-openapi.yml",
+   "openapi/_original/lucidya-ltd-ai-api.json",
+   "openapi/_original/lucidya-ltd-cdp-api-openapi.yml",
+   "openapi/_original/lucidya-ltd-cdp-api.yml",
+   "openapi/_original/lucidya-ltd-omnichannel-api-openapi.yml",
+   "openapi/_original/lucidya-ltd-omnichannel-api.yaml",
+   "openapi/_original/lucidya-ltd-omniserve-analytics-api-openapi.yml",
+   "openapi/_original/lucidya-ltd-omniserve-api.yml",
+   "openapi/_original/lucidya-ltd-social-listening-api-openapi.yml",
+   "openapi/_original/lucidya-ltd-social-listening-api.yaml"
+  ]
+ },
+ {
+  "slug": "lytics",
+  "specs": [
+   "openapi/_original/lytics-api-v1-openapi.json",
+   "openapi/_original/lytics-api-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "mapp",
+  "specs": [
+   "openapi/_original/mapp-engage-openapi.yml",
+   "openapi/_original/mapp-fashion-openapi.yml",
+   "openapi/_original/mapp-intelligence-analytics-openapi.yml",
+   "openapi/_original/mapp-product-catalog-openapi.yml"
+  ]
+ },
+ {
+  "slug": "matomo",
+  "specs": [
+   "openapi/_original/matomo-ab-testing-openapi.json",
+   "openapi/_original/matomo-actions-openapi.json",
+   "openapi/_original/matomo-activity-log-openapi.json",
+   "openapi/_original/matomo-advertising-conversion-export-openapi.json",
+   "openapi/_original/matomo-annotations-openapi.json",
+   "openapi/_original/matomo-api-openapi.json",
+   "openapi/_original/matomo-api-reference-openapi.json",
+   "openapi/_original/matomo-bandwidth-openapi.json",
+   "openapi/_original/matomo-cohorts-openapi.json",
+   "openapi/_original/matomo-contents-openapi.json",
+   "openapi/_original/matomo-core-admin-home-openapi.json",
+   "openapi/_original/matomo-crash-analytics-openapi.json",
+   "openapi/_original/matomo-custom-alerts-openapi.json",
+   "openapi/_original/matomo-custom-dimensions-openapi.json",
+   "openapi/_original/matomo-custom-js-tracker-openapi.json",
+   "openapi/_original/matomo-custom-reports-openapi.json",
+   "openapi/_original/matomo-dashboard-openapi.json",
+   "openapi/_original/matomo-device-plugins-openapi.json",
+   "openapi/_original/matomo-devices-detection-openapi.json",
+   "openapi/_original/matomo-events-openapi.json",
+   "openapi/_original/matomo-feedback-openapi.json",
+   "openapi/_original/matomo-form-analytics-openapi.json",
+   "openapi/_original/matomo-funnels-openapi.json",
+   "openapi/_original/matomo-goals-openapi.json",
+   "openapi/_original/matomo-heatmap-session-recording-openapi.json",
+   "openapi/_original/matomo-image-graph-openapi.json",
+   "openapi/_original/matomo-insights-openapi.json",
+   "openapi/_original/matomo-languages-manager-openapi.json",
+   "openapi/_original/matomo-live-openapi.json",
+   "openapi/_original/matomo-login-openapi.json",
+   "openapi/_original/matomo-marketing-campaigns-reporting-openapi.json",
+   "openapi/_original/matomo-marketplace-openapi.json",
+   "openapi/_original/matomo-media-analytics-openapi.json",
+   "openapi/_original/matomo-mobile-messaging-openapi.json",
+   "openapi/_original/matomo-multi-sites-openapi.json",
+   "openapi/_original/matomo-oauth2-openapi.json",
+   "openapi/_original/matomo-openapi.yml",
+   "openapi/_original/matomo-overlay-openapi.json",
+   "openapi/_original/matomo-page-performance-openapi.json",
+   "openapi/_original/matomo-privacy-manager-openapi.json",
+   "openapi/_original/matomo-referrers-openapi.json",
+   "openapi/_original/matomo-resolution-openapi.json",
+   "openapi/_original/matomo-roll-up-reporting-openapi.json",
+   "openapi/_original/matomo-scheduled-reports-openapi.json",
+   "openapi/_original/matomo-search-engine-keywords-performance-openapi.json",
+   "openapi/_original/matomo-segment-editor-openapi.json",
+   "openapi/_original/matomo-seo-openapi.json",
+   "openapi/_original/matomo-sites-manager-openapi.json",
+   "openapi/_original/matomo-tag-manager-openapi.json",
+   "openapi/_original/matomo-tour-openapi.json",
+   "openapi/_original/matomo-tracking-openapi.yml",
+   "openapi/_original/matomo-transitions-openapi.json",
+   "openapi/_original/matomo-two-factor-auth-openapi.json",
+   "openapi/_original/matomo-user-country-openapi.json",
+   "openapi/_original/matomo-user-id-openapi.json",
+   "openapi/_original/matomo-user-language-openapi.json",
+   "openapi/_original/matomo-users-manager-openapi.json",
+   "openapi/_original/matomo-visit-frequency-openapi.json",
+   "openapi/_original/matomo-visit-time-openapi.json",
+   "openapi/_original/matomo-visitor-interest-openapi.json",
+   "openapi/_original/matomo-visits-summary-openapi.json"
+  ]
+ },
+ {
+  "slug": "microsoft-clarity",
+  "specs": [
+   "openapi/_original/microsoft-clarity-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mixpanel",
+  "specs": [
+   "openapi/_original/mixpanel-annotations-openapi.yml",
+   "openapi/_original/mixpanel-data-pipelines-openapi.yml",
+   "openapi/_original/mixpanel-event-export-openapi.yml",
+   "openapi/_original/mixpanel-gdpr-ccpa-openapi.yml",
+   "openapi/_original/mixpanel-identity-openapi.yml",
+   "openapi/_original/mixpanel-ingestion-openapi.yml",
+   "openapi/_original/mixpanel-lexicon-schemas-openapi.yml",
+   "openapi/_original/mixpanel-query-openapi.yml",
+   "openapi/_original/mixpanel-service-accounts-openapi.yml",
+   "openapi/_original/mixpanel-warehouse-connectors-openapi.yml"
+  ]
+ },
+ {
+  "slug": "moengage",
+  "specs": [
+   "openapi/_original/moengage-analytics-openapi.yml",
+   "openapi/_original/moengage-business-events-openapi.yml",
+   "openapi/_original/moengage-campaign-draft-openapi.yml",
+   "openapi/_original/moengage-campaigns-openapi.yml",
+   "openapi/_original/moengage-cards-openapi.yml",
+   "openapi/_original/moengage-catalog-openapi.yml",
+   "openapi/_original/moengage-cohort-audience-openapi.yml",
+   "openapi/_original/moengage-content-blocks-openapi.yml",
+   "openapi/_original/moengage-coupons-openapi.yml",
+   "openapi/_original/moengage-custom-segments-openapi.yml",
+   "openapi/_original/moengage-data-openapi.yml",
+   "openapi/_original/moengage-email-subscription-openapi.yml",
+   "openapi/_original/moengage-email-templates-1-openapi.yml",
+   "openapi/_original/moengage-email-templates-2-openapi.yml",
+   "openapi/_original/moengage-flows-openapi.yml",
+   "openapi/_original/moengage-gdpr-ccpa-openapi.yml",
+   "openapi/_original/moengage-in-app-templates-openapi.yml",
+   "openapi/_original/moengage-inform-openapi.yml",
+   "openapi/_original/moengage-live-activities-openapi.yml",
+   "openapi/_original/moengage-message-archival-openapi.yml",
+   "openapi/_original/moengage-offerings-openapi.yml",
+   "openapi/_original/moengage-osm-templates-openapi.yml",
+   "openapi/_original/moengage-personalize-experience-openapi.yml",
+   "openapi/_original/moengage-push-openapi.yml",
+   "openapi/_original/moengage-push-templates-openapi.yml",
+   "openapi/_original/moengage-push-v2-1-openapi.yml",
+   "openapi/_original/moengage-recommendations-openapi.yml",
+   "openapi/_original/moengage-sms-templates-openapi.yml",
+   "openapi/_original/moengage-stats-report-openapi.yml",
+   "openapi/_original/moengage-subscription-categories-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mparticle",
+  "specs": [
+   "openapi/_original/mparticle-dataplanning-openapi-original.yml",
+   "openapi/_original/mparticle-events-openapi-original.yml",
+   "openapi/_original/mparticle-identity-swagger-original.yml"
+  ]
+ },
+ {
+  "slug": "navattic",
+  "specs": [
+   "openapi/_original/navattic-website-openapi.json"
+  ]
+ },
+ {
+  "slug": "observepoint",
+  "specs": [
+   "openapi/_original/observepoint-grid-reports-api-openapi.yml",
+   "openapi/_original/observepoint-v2-api-openapi.yml",
+   "openapi/_original/observepoint-v3-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "openpanel",
+  "specs": [
+   "openapi/_original/openpanel-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ortto",
+  "specs": [
+   "openapi/_original/ortto-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pendoio",
+  "specs": [
+   "openapi/_original/pendoio-engage-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pirsch",
+  "specs": [
+   "openapi/_original/pirsch-pirsch-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "plausible",
+  "specs": [
+   "openapi/_original/plausible-events-openapi.yml",
+   "openapi/_original/plausible-sites-openapi.yml",
+   "openapi/_original/plausible-stats-openapi.yml"
+  ]
+ },
+ {
+  "slug": "posthog",
+  "specs": [
+   "openapi/_original/posthog-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rudderstack",
+  "specs": [
+   "openapi/_original/rudderstack-gateway-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rybbit",
+  "specs": [
+   "openapi/_original/rybbit-openapi.yml"
+  ]
+ },
+ {
+  "slug": "segment",
+  "specs": [
+   "openapi/_original/segment-config-api-openapi.yml",
+   "openapi/_original/segment-http-tracking-api-openapi.yml",
+   "openapi/_original/segment-profile-api-openapi.yml",
+   "openapi/_original/segment-public-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sendlane",
+  "specs": [
+   "openapi/_original/sendlane-openapi.yml",
+   "openapi/_original/sendlane-v2.v2.yaml"
+  ]
+ },
+ {
+  "slug": "sensors-data",
+  "specs": [
+   "openapi/_original/1.3.7-horizon-Catalog-v1-swagger.json",
+   "openapi/_original/1.3.7-horizon-DataSubscription-v1-swagger.json",
+   "openapi/_original/1.3.7-horizon-Schema-v1-swagger.json",
+   "openapi/_original/1.3.7-horizon-Segment-v1-swagger.json",
+   "openapi/_original/1.3.7-horizon-Table-v1-swagger.json",
+   "openapi/_original/1.3.7-horizon-Tag-v1-swagger.json",
+   "openapi/_original/1.5.5-portal-Identity-v2-swagger.json",
+   "openapi/_original/1.5.5-portal-Management-v2-swagger.json",
+   "openapi/_original/1.5.5-portal-ResourceManagement-v2-swagger.json",
+   "openapi/_original/3.0.5-analytics-Channel-v1-swagger.json",
+   "openapi/_original/3.0.5-analytics-Dashboard-v1-swagger.json",
+   "openapi/_original/3.0.5-analytics-Dataset-v1-swagger.json",
+   "openapi/_original/3.0.5-analytics-EventMeta-v1-swagger.json",
+   "openapi/_original/3.0.5-analytics-Model-v1-swagger.json",
+   "openapi/_original/3.0.5-analytics-Model-v2-swagger.json",
+   "openapi/_original/3.0.5-analytics-PropertyMeta-v1-swagger.json",
+   "openapi/_original/3.0.5-analytics-SmartAlarm-v1-swagger.json",
+   "openapi/_original/4.5.3-focus-ExpressActionChannel-v1-swagger.json",
+   "openapi/_original/4.5.3-focus-ExpressAttribute-v1-swagger.json",
+   "openapi/_original/4.5.3-focus-ExpressAttributeOnline-v1-swagger.json",
+   "openapi/_original/4.5.3-focus-ExpressAudienceMeta-v1-swagger.json",
+   "openapi/_original/4.5.3-focus-ExpressAudienceOnline-v1-swagger.json",
+   "openapi/_original/4.5.3-focus-ExpressNotify-v1-swagger.json",
+   "openapi/_original/4.5.3-focus-RealTimeTag-v1-swagger.json",
+   "openapi/_original/4.5.3-focus-TriggerStrategy-v1-swagger.json",
+   "openapi/_original/4.5.3-focus-Web-v1-swagger.json",
+   "openapi/_original/4.5.3-focus-WebBlackUsers-v1-swagger.json",
+   "openapi/_original/4.5.3-focus-WebMaterials-v1-swagger.json",
+   "openapi/_original/4.5.3-focus-WebSections-v1-swagger.json",
+   "openapi/_original/sensors-data-analytics-channel-v1-openapi.yml",
+   "openapi/_original/sensors-data-analytics-dashboard-v1-openapi.yml",
+   "openapi/_original/sensors-data-analytics-dataset-v1-openapi.yml",
+   "openapi/_original/sensors-data-analytics-event-meta-v1-openapi.yml",
+   "openapi/_original/sensors-data-analytics-model-v1-openapi.yml",
+   "openapi/_original/sensors-data-analytics-model-v2-openapi.yml",
+   "openapi/_original/sensors-data-analytics-property-meta-v1-openapi.yml",
+   "openapi/_original/sensors-data-analytics-smart-alarm-v1-openapi.yml",
+   "openapi/_original/sensors-data-focus-express-action-channel-v1-openapi.yml",
+   "openapi/_original/sensors-data-focus-express-attribute-online-v1-openapi.yml",
+   "openapi/_original/sensors-data-focus-express-attribute-v1-openapi.yml",
+   "openapi/_original/sensors-data-focus-express-audience-meta-v1-openapi.yml",
+   "openapi/_original/sensors-data-focus-express-audience-online-v1-openapi.yml",
+   "openapi/_original/sensors-data-focus-express-notify-v1-openapi.yml",
+   "openapi/_original/sensors-data-focus-real-time-tag-v1-openapi.yml",
+   "openapi/_original/sensors-data-focus-trigger-strategy-v1-openapi.yml",
+   "openapi/_original/sensors-data-focus-web-black-users-v1-openapi.yml",
+   "openapi/_original/sensors-data-focus-web-materials-v1-openapi.yml",
+   "openapi/_original/sensors-data-focus-web-sections-v1-openapi.yml",
+   "openapi/_original/sensors-data-focus-web-v1-openapi.yml",
+   "openapi/_original/sensors-data-horizon-catalog-v1-openapi.yml",
+   "openapi/_original/sensors-data-horizon-data-subscription-v1-openapi.yml",
+   "openapi/_original/sensors-data-horizon-schema-v1-openapi.yml",
+   "openapi/_original/sensors-data-horizon-segment-v1-openapi.yml",
+   "openapi/_original/sensors-data-horizon-table-v1-openapi.yml",
+   "openapi/_original/sensors-data-horizon-tag-v1-openapi.yml",
+   "openapi/_original/sensors-data-portal-identity-v2-openapi.yml",
+   "openapi/_original/sensors-data-portal-management-v2-openapi.yml",
+   "openapi/_original/sensors-data-portal-resource-management-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "similarweb",
+  "specs": [
+   "openapi/_original/similarweb-batch-api-openapi.yml",
+   "openapi/_original/similarweb-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "simon-data",
+  "specs": [
+   "openapi/_original/simon-data-audience-api-openapi.yml",
+   "openapi/_original/simon-data-event-ingestion-openapi.yml",
+   "openapi/_original/simon-data-readme-add-to-cartevent-openapi.json",
+   "openapi/_original/simon-data-readme-authenticationevent-openapi.json",
+   "openapi/_original/simon-data-readme-cartevent-openapi.json",
+   "openapi/_original/simon-data-readme-complete-transactionevent-openapi.json",
+   "openapi/_original/simon-data-readme-customevent-openapi.json",
+   "openapi/_original/simon-data-readme-favoriteevent-openapi.json",
+   "openapi/_original/simon-data-readme-get-a-contact-openapi.json",
+   "openapi/_original/simon-data-readme-identifyevent-openapi.json",
+   "openapi/_original/simon-data-readme-page-viewevent-openapi.json",
+   "openapi/_original/simon-data-readme-product-viewevent-openapi.json",
+   "openapi/_original/simon-data-readme-registrationevent-openapi.json",
+   "openapi/_original/simon-data-readme-remove-from-cartevent-openapi.json",
+   "openapi/_original/simon-data-readme-search-event-openapi.json",
+   "openapi/_original/simon-data-readme-update-cartevent-openapi.json",
+   "openapi/_original/simon-data-readme-waitlistevent-openapi.json"
+  ]
+ },
+ {
+  "slug": "simpleanalytics",
+  "specs": [
+   "openapi/_original/simpleanalytics-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sitecore",
+  "specs": [
+   "openapi/_original/sitecore-cdp-rest-api-openapi.yml",
+   "openapi/_original/sitecore-content-hub-rest-api-openapi.yml",
+   "openapi/_original/sitecore-discover-api-openapi.yml",
+   "openapi/_original/sitecore-ordercloud-api-openapi.yml",
+   "openapi/_original/sitecore-personalize-rest-api-openapi.yml",
+   "openapi/_original/sitecore-xm-cloud-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "smartlook",
+  "specs": [
+   "openapi/_original/smartlook-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "snowplow",
+  "specs": [
+   "openapi/_original/snowplow-console-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "splio",
+  "specs": [
+   "openapi/_original/splio-campaign-api-v1-openapi.json",
+   "openapi/_original/splio-customer-platform-openapi.json",
+   "openapi/_original/splio-doc-swagger2.json"
+  ]
+ },
+ {
+  "slug": "sprig",
+  "specs": [
+   "openapi/_original/sprig-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "statsig",
+  "specs": [
+   "openapi/_original/statsig-client-sdk-api-openapi.yml",
+   "openapi/_original/statsig-console-api-openapi.yml",
+   "openapi/_original/statsig-http-api-openapi.yml",
+   "openapi/_original/statsig-server-sdk-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "swetrix",
+  "specs": [
+   "openapi/_original/swetrix-admin-api-openapi.yml",
+   "openapi/_original/swetrix-statistics-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tealium",
+  "specs": [
+   "openapi/_original/tealium-ai-read-openapi.yml",
+   "openapi/_original/tealium-authentication-openapi.yml",
+   "openapi/_original/tealium-collect-http-openapi.yml",
+   "openapi/_original/tealium-moments-openapi.yml",
+   "openapi/_original/tealium-visitor-privacy-openapi.yml",
+   "openapi/_original/tealium-visitor-profile-openapi.yml"
+  ]
+ },
+ {
+  "slug": "treasure-data",
+  "specs": [
+   "openapi/_original/treasure-data-cdp-api-openapi.yml",
+   "openapi/_original/treasure-data-dwh-integration-api-openapi.yml",
+   "openapi/_original/treasure-data-llm-api-openapi.yml",
+   "openapi/_original/treasure-data-personalization-api-openapi.yml",
+   "openapi/_original/treasure-data-postback-api-v2-openapi.yml",
+   "openapi/_original/treasure-data-td-api-openapi.yml",
+   "openapi/_original/treasure-data-td-api-v3-openapi.yml"
+  ]
+ },
+ {
+  "slug": "trubrics",
+  "specs": [
+   "openapi/_original/trubrics-openapi.yml"
+  ]
+ },
+ {
+  "slug": "umami",
+  "specs": [
+   "openapi/_original/umami-openapi.json",
+   "openapi/_original/umami-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zaius",
+  "specs": [
+   "openapi/_original/zaius-advanced-openapi.json",
+   "openapi/_original/zaius-consent-openapi.json",
+   "openapi/_original/zaius-customers-openapi.json",
+   "openapi/_original/zaius-events-openapi.json",
+   "openapi/_original/zaius-exports-openapi.json",
+   "openapi/_original/zaius-lists-openapi.json",
+   "openapi/_original/zaius-objects-openapi.json",
+   "openapi/_original/zaius-orders-openapi.json",
+   "openapi/_original/zaius-products-openapi.json",
+   "openapi/_original/zaius-realtimesegments-openapi.json",
+   "openapi/_original/zaius-recommendations-openapi.json"
+  ]
+ }
+]

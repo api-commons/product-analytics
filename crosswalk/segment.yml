@@ -1,0 +1,37 @@
+provider: segment
+apis_io: https://apis.io/providers/segment/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - track
+    - events
+    properties:
+      user_id: userId
+      properties:
+      - properties
+      - context
+      - traits
+      timestamp: timestamp
+      id: messageId
+      type: type
+      anonymous_id: anonymousId
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/segment-http-tracking-api-openapi.yml#POST /track
+    - openapi/_original/segment-profile-api-openapi.yml#GET /collections/users/profiles/{externalId}/events
+  profile:
+    path_segment:
+    - identify
+    properties:
+      traits: traits
+      user_id:
+      - userId
+      - anonymousId
+      timestamp: timestamp
+      context: context
+      id: messageId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/segment-http-tracking-api-openapi.yml#POST /identify

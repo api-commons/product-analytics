@@ -1,0 +1,17 @@
+provider: emarsys
+apis_io: https://apis.io/providers/emarsys/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - event
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/emarsys-events-openapi.yml#GET /v2/event/
+    - openapi/_original/emarsys-events-openapi.yml#GET /v2/event/{eventId}
+    - openapi/_original/emarsys-events-openapi.yml#POST /v2/event
+    - openapi/_original/emarsys-events-openapi.yml#POST /v2/event/{eventId}

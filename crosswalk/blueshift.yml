@@ -1,0 +1,15 @@
+provider: blueshift
+apis_io: https://apis.io/providers/blueshift/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - event
+    properties:
+      user_id: customer_id
+      anonymous_id: device_id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/blueshift-openapi.json#POST /api/v1/event
+    - openapi/_original/blueshift-openapi.yml#POST /api/v1/event

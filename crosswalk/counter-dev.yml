@@ -1,0 +1,12 @@
+provider: counter-dev
+apis_io: https://apis.io/providers/counter-dev/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - track
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/counter-dev-openapi.yml#GET /track

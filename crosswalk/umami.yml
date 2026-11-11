@@ -1,0 +1,58 @@
+provider: umami
+apis_io: https://apis.io/providers/umami/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    properties:
+      user_id: distinctId
+      id: id
+      name: eventName
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/umami-openapi.json#GET /api/websites/{websiteId}/event-data/events
+    - openapi/_original/umami-openapi.json#GET /api/websites/{websiteId}/events
+    - openapi/_original/umami-openapi.yml#GET /api/websites/{websiteId}/event-data/events
+    - openapi/_original/umami-openapi.yml#GET /api/websites/{websiteId}/events
+  cohort:
+    path_segment:
+    - segments
+    properties:
+      id: id
+      name: name
+      created_at: createdAt
+      updated_at: updatedAt
+      is_static: type
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/umami-openapi.json#DELETE /api/websites/{websiteId}/segments/{segmentId}
+    - openapi/_original/umami-openapi.json#GET /api/websites/{websiteId}/segments
+    - openapi/_original/umami-openapi.json#GET /api/websites/{websiteId}/segments/{segmentId}
+    - openapi/_original/umami-openapi.json#POST /api/websites/{websiteId}/segments
+    - openapi/_original/umami-openapi.json#POST /api/websites/{websiteId}/segments/{segmentId}
+  dashboard:
+    path_segment:
+    - dashboard
+    properties:
+      id: id
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/umami-openapi.json#GET /api/dashboard
+    - openapi/_original/umami-openapi.json#POST /api/dashboard
+    - openapi/_original/umami-openapi.yml#GET /api/dashboard
+    - openapi/_original/umami-openapi.yml#POST /api/dashboard
+  funnel:
+    path_segment:
+    - funnels
+    properties:
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/umami-openapi.json#DELETE /api/websites/{websiteId}/funnels/{funnelId}
+    - openapi/_original/umami-openapi.json#GET /api/websites/{websiteId}/funnels
+    - openapi/_original/umami-openapi.json#GET /api/websites/{websiteId}/funnels/{funnelId}
+    - openapi/_original/umami-openapi.json#POST /api/websites/{websiteId}/funnels
+    - openapi/_original/umami-openapi.json#POST /api/websites/{websiteId}/funnels/{funnelId}

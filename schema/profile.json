@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/product-analytics/main/schema/profile.json",
+  "title": "Profile",
+  "description": "The common profile in Product Analytics, distilled from 13 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "traits": {
+      "type": "object",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.615,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "attributes",
+        "traits",
+        "properties",
+        "$set"
+      ]
+    },
+    "user_id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.538,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "userId",
+        "anonymousId",
+        "externalId",
+        "user_id",
+        "$distinct_id"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.385,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "timestamp",
+        "receivedAt",
+        "sentAt",
+        "originalTimestamp"
+      ]
+    },
+    "context": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.308,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "context"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.308,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "messageId",
+        "id",
+        "uuid"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "createdAt",
+        "CreatedDate",
+        "created_at"
+      ],
+      "format": "date-time"
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "name",
+        "Title"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "type"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "updatedAt",
+        "ModifiedDate",
+        "updated"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "product-analytics",
+    "concept": "profile",
+    "providers": 13,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

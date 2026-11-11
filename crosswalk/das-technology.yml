@@ -1,0 +1,13 @@
+provider: das-technology
+apis_io: https://apis.io/providers/das-technology/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/das-technology-daswebapi-v1-openapi.yml#GET /v1/mail/events/{token}
+    - openapi/_original/das-technology-daswebapi-v1-swagger.json#GET /v1/mail/events/{token}

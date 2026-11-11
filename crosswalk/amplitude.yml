@@ -1,0 +1,34 @@
+provider: amplitude
+apis_io: https://apis.io/providers/amplitude/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - event
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/amplitude-taxonomy-api-openapi.yml#DELETE /api/2/taxonomy/event/{event_type}
+    - openapi/_original/amplitude-taxonomy-api-openapi.yml#GET /api/2/taxonomy/event
+    - openapi/_original/amplitude-taxonomy-api-openapi.yml#GET /api/2/taxonomy/event/{event_type}
+    - openapi/_original/amplitude-taxonomy-api-openapi.yml#POST /api/2/taxonomy/event
+    - openapi/_original/amplitude-taxonomy-api-openapi.yml#PUT /api/2/taxonomy/event/{event_type}
+  cohort:
+    path_segment:
+    - cohorts
+    properties:
+      id: id
+      name: name
+      description: description
+      count: size
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/amplitude-behavioral-cohorts-api-openapi.yml#GET /api/3/cohorts
+  funnel:
+    path_segment:
+    - funnels
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/amplitude-dashboard-rest-api-openapi.yml#GET /api/2/funnels

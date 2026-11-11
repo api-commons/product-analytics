@@ -1,0 +1,243 @@
+context: product-analytics
+generated: '2026-11-10'
+adopters:
+- provider: adobe-analytics
+  apis_io: https://apis.io/providers/adobe-analytics/
+  crosswalk: crosswalk/adobe-analytics.yml
+  concepts:
+  - cohort
+  - event
+- provider: amplitude
+  apis_io: https://apis.io/providers/amplitude/
+  crosswalk: crosswalk/amplitude.yml
+  concepts:
+  - cohort
+  - event
+  - funnel
+- provider: autoleadstar
+  apis_io: https://apis.io/providers/autoleadstar/
+  crosswalk: crosswalk/autoleadstar.yml
+  concepts:
+  - event
+- provider: blueshift
+  apis_io: https://apis.io/providers/blueshift/
+  crosswalk: crosswalk/blueshift.yml
+  concepts:
+  - event
+- provider: boom-ai
+  apis_io: https://apis.io/providers/boom-ai/
+  crosswalk: crosswalk/boom-ai.yml
+  concepts:
+  - cohort
+  - event
+  - profile
+- provider: clix-so
+  apis_io: https://apis.io/providers/clix-so/
+  crosswalk: crosswalk/clix-so.yml
+  concepts:
+  - event
+- provider: counter-dev
+  apis_io: https://apis.io/providers/counter-dev/
+  crosswalk: crosswalk/counter-dev.yml
+  concepts:
+  - event
+- provider: crossenagage
+  apis_io: https://apis.io/providers/crossenagage/
+  crosswalk: crosswalk/crossenagage.yml
+  concepts:
+  - event
+- provider: customer-io
+  apis_io: https://apis.io/providers/customer-io/
+  crosswalk: crosswalk/customer-io.yml
+  concepts:
+  - cohort
+  - event
+  - profile
+- provider: das-technology
+  apis_io: https://apis.io/providers/das-technology/
+  crosswalk: crosswalk/das-technology.yml
+  concepts:
+  - event
+- provider: emarsys
+  apis_io: https://apis.io/providers/emarsys/
+  crosswalk: crosswalk/emarsys.yml
+  concepts:
+  - event
+- provider: freshpaint
+  apis_io: https://apis.io/providers/freshpaint/
+  crosswalk: crosswalk/freshpaint.yml
+  concepts:
+  - event
+- provider: fullstory
+  apis_io: https://apis.io/providers/fullstory/
+  crosswalk: crosswalk/fullstory.yml
+  concepts:
+  - event
+- provider: gainsight
+  apis_io: https://apis.io/providers/gainsight/
+  crosswalk: crosswalk/gainsight.yml
+  concepts:
+  - event
+  - profile
+- provider: google-analytics
+  apis_io: https://apis.io/providers/google-analytics/
+  crosswalk: crosswalk/google-analytics.yml
+  concepts:
+  - cohort
+  - event
+  - profile
+- provider: heap
+  apis_io: https://apis.io/providers/heap/
+  crosswalk: crosswalk/heap.yml
+  concepts:
+  - event
+  - profile
+- provider: incentivio
+  apis_io: https://apis.io/providers/incentivio/
+  crosswalk: crosswalk/incentivio.yml
+  concepts:
+  - cohort
+  - event
+- provider: insider
+  apis_io: https://apis.io/providers/insider/
+  crosswalk: crosswalk/insider.yml
+  concepts:
+  - event
+  - profile
+- provider: june
+  apis_io: https://apis.io/providers/june/
+  crosswalk: crosswalk/june.yml
+  concepts:
+  - event
+  - profile
+- provider: kissmetrics
+  apis_io: https://apis.io/providers/kissmetrics/
+  crosswalk: crosswalk/kissmetrics.yml
+  concepts:
+  - event
+- provider: lytics
+  apis_io: https://apis.io/providers/lytics/
+  crosswalk: crosswalk/lytics.yml
+  concepts:
+  - cohort
+  - event
+- provider: mapp
+  apis_io: https://apis.io/providers/mapp/
+  crosswalk: crosswalk/mapp.yml
+  concepts:
+  - cohort
+  - event
+- provider: mixpanel
+  apis_io: https://apis.io/providers/mixpanel/
+  crosswalk: crosswalk/mixpanel.yml
+  concepts:
+  - event
+  - funnel
+  - profile
+- provider: moengage
+  apis_io: https://apis.io/providers/moengage/
+  crosswalk: crosswalk/moengage.yml
+  concepts:
+  - dashboard
+  - event
+- provider: mparticle
+  apis_io: https://apis.io/providers/mparticle/
+  crosswalk: crosswalk/mparticle.yml
+  concepts:
+  - event
+  - profile
+- provider: openpanel
+  apis_io: https://apis.io/providers/openpanel/
+  crosswalk: crosswalk/openpanel.yml
+  concepts:
+  - cohort
+  - dashboard
+  - event
+  - funnel
+  - profile
+- provider: pendoio
+  apis_io: https://apis.io/providers/pendoio/
+  crosswalk: crosswalk/pendoio.yml
+  concepts:
+  - cohort
+  - event
+- provider: pirsch
+  apis_io: https://apis.io/providers/pirsch/
+  crosswalk: crosswalk/pirsch.yml
+  concepts:
+  - event
+  - funnel
+- provider: plausible
+  apis_io: https://apis.io/providers/plausible/
+  crosswalk: crosswalk/plausible.yml
+  concepts:
+  - event
+- provider: posthog
+  apis_io: https://apis.io/providers/posthog/
+  crosswalk: crosswalk/posthog.yml
+  concepts:
+  - cohort
+  - dashboard
+  - event
+  - funnel
+  - profile
+- provider: rudderstack
+  apis_io: https://apis.io/providers/rudderstack/
+  crosswalk: crosswalk/rudderstack.yml
+  concepts:
+  - event
+  - profile
+- provider: rybbit
+  apis_io: https://apis.io/providers/rybbit/
+  crosswalk: crosswalk/rybbit.yml
+  concepts:
+  - event
+- provider: segment
+  apis_io: https://apis.io/providers/segment/
+  crosswalk: crosswalk/segment.yml
+  concepts:
+  - event
+  - profile
+- provider: sendlane
+  apis_io: https://apis.io/providers/sendlane/
+  crosswalk: crosswalk/sendlane.yml
+  concepts:
+  - cohort
+  - event
+- provider: simon-data
+  apis_io: https://apis.io/providers/simon-data/
+  crosswalk: crosswalk/simon-data.yml
+  concepts:
+  - event
+- provider: simpleanalytics
+  apis_io: https://apis.io/providers/simpleanalytics/
+  crosswalk: crosswalk/simpleanalytics.yml
+  concepts:
+  - event
+- provider: smartlook
+  apis_io: https://apis.io/providers/smartlook/
+  crosswalk: crosswalk/smartlook.yml
+  concepts:
+  - event
+  - funnel
+- provider: tealium
+  apis_io: https://apis.io/providers/tealium/
+  crosswalk: crosswalk/tealium.yml
+  concepts:
+  - event
+  - profile
+- provider: umami
+  apis_io: https://apis.io/providers/umami/
+  crosswalk: crosswalk/umami.yml
+  concepts:
+  - cohort
+  - dashboard
+  - event
+  - funnel
+- provider: zaius
+  apis_io: https://apis.io/providers/zaius/
+  crosswalk: crosswalk/zaius.yml
+  concepts:
+  - cohort
+  - event
+  - profile

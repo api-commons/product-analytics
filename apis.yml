@@ -1,0 +1,57 @@
+aid: common-product-analytics
+name: Product Analytics
+type: Common
+description: 'The common Product Analytics vocabulary, distilled from the harvested OpenAPI of 80 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Customer Data Platform
+- CDP
+- Product Analytics
+- Web Analytics
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/product-analytics/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-product-analytics:product-analytics
+  name: Common Product Analytics Interface
+  description: The Product Analytics interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/product-analytics
+  tags:
+  - Customer Data Platform
+  - CDP
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/product-analytics/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/product-analytics/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/product-analytics/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: event
+    url: https://raw.githubusercontent.com/api-commons/product-analytics/main/schema/event.json
+  - type: JSONSchema
+    name: profile
+    url: https://raw.githubusercontent.com/api-commons/product-analytics/main/schema/profile.json
+  - type: JSONSchema
+    name: cohort
+    url: https://raw.githubusercontent.com/api-commons/product-analytics/main/schema/cohort.json
+  - type: JSONSchema
+    name: dashboard
+    url: https://raw.githubusercontent.com/api-commons/product-analytics/main/schema/dashboard.json
+  - type: JSONSchema
+    name: funnel
+    url: https://raw.githubusercontent.com/api-commons/product-analytics/main/schema/funnel.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/product-analytics/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,33 @@
+provider: sendlane
+apis_io: https://apis.io/providers/sendlane/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    - event
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/sendlane-openapi.yml#DELETE /integrations/custom/{integrationToken}/events/{eventId}
+    - openapi/_original/sendlane-openapi.yml#GET /integrations/custom/{integrationToken}/events
+    - openapi/_original/sendlane-openapi.yml#GET /integrations/custom/{integrationToken}/events/{eventId}
+    - openapi/_original/sendlane-openapi.yml#POST /integrations/custom/{integrationToken}/events
+    - openapi/_original/sendlane-openapi.yml#POST /tracking/event
+  cohort:
+    path_segment:
+    - segments
+    properties:
+      id: id
+      name: name
+      created_at: created_at
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/sendlane-openapi.yml#GET /contacts/{contactId}/segments
+    - openapi/_original/sendlane-openapi.yml#GET /segments
+    - openapi/_original/sendlane-openapi.yml#GET /segments/{segmentId}
+    - openapi/_original/sendlane-v2.v2.yaml#GET /contacts/{contactId}/segments
+    - openapi/_original/sendlane-v2.v2.yaml#GET /segments

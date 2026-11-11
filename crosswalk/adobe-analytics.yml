@@ -1,0 +1,29 @@
+provider: adobe-analytics
+apis_io: https://apis.io/providers/adobe-analytics/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/adobe-analytics-bulk-data-insertion-api-openapi.yml#POST /events
+  cohort:
+    path_segment:
+    - segments
+    properties:
+      id: id
+      name: name
+      description: description
+      filters: definition
+      updated_at: modified
+      tags: tags
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/adobe-analytics-api-openapi.yml#DELETE /segments/{segmentId}
+    - openapi/_original/adobe-analytics-api-openapi.yml#GET /segments
+    - openapi/_original/adobe-analytics-api-openapi.yml#GET /segments/{segmentId}
+    - openapi/_original/adobe-analytics-api-openapi.yml#POST /segments
+    - openapi/_original/adobe-analytics-api-openapi.yml#PUT /segments/{segmentId}

@@ -1,0 +1,16 @@
+provider: clix-so
+apis_io: https://apis.io/providers/clix-so/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    properties:
+      user_id: user_id
+      name: name
+      anonymous_id: device_id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/clix-so-external-v1-openapi.json#POST /api/v1/events
+    - openapi/_original/clix-so-openapi.yml#POST /api/v1/events

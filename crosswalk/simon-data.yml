@@ -1,0 +1,23 @@
+provider: simon-data
+apis_io: https://apis.io/providers/simon-data/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - collect
+    properties:
+      user_id: userId
+      properties:
+      - context
+      - traits
+      - properties
+      timestamp: sentAt
+      type: type
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/simon-data-event-ingestion-openapi.yml#POST /events/v1/collect
+    - openapi/_original/simon-data-readme-add-to-cartevent-openapi.json#POST /events/v1/collect
+    - openapi/_original/simon-data-readme-authenticationevent-openapi.json#POST /events/v1/collect
+    - openapi/_original/simon-data-readme-cartevent-openapi.json#POST /events/v1/collect
+    - openapi/_original/simon-data-readme-complete-transactionevent-openapi.json#POST /events/v1/collect

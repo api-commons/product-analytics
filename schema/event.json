@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/product-analytics/main/schema/event.json",
+  "title": "Event",
+  "description": "The common event in Product Analytics, distilled from 35 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.429,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "userId",
+        "user_id",
+        "customer_id",
+        "externalId",
+        "personId",
+        "user",
+        "distinct_id",
+        "distinctId"
+      ]
+    },
+    "properties": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.4,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "properties",
+        "context",
+        "traits",
+        "props"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.371,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "timestamp",
+        "receivedAt",
+        "sentAt",
+        "ts",
+        "originalTimestamp"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.343,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "id",
+        "messageId",
+        "eventId"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.343,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "name",
+        "event_name",
+        "title",
+        "eventName"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.257,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "type"
+      ]
+    },
+    "anonymous_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.229,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "device_id",
+        "anonymousId",
+        "deviceId"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "product-analytics",
+    "concept": "event",
+    "providers": 35,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

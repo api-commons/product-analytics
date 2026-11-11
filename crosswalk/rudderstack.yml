@@ -1,0 +1,30 @@
+provider: rudderstack
+apis_io: https://apis.io/providers/rudderstack/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - track
+    properties:
+      user_id: userId
+      properties:
+      - properties
+      - context
+      timestamp: timestamp
+      anonymous_id: anonymousId
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/rudderstack-gateway-openapi.yml#POST /v1/track
+  profile:
+    path_segment:
+    - identify
+    properties:
+      user_id:
+      - userId
+      - anonymousId
+      timestamp: timestamp
+      context: context
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/rudderstack-gateway-openapi.yml#POST /v1/identify

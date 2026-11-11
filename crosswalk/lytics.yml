@@ -1,0 +1,42 @@
+provider: lytics
+apis_io: https://apis.io/providers/lytics/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - event
+    - events
+    properties:
+      user_id: user_id
+      properties: context
+      timestamp:
+      - ts
+      - timestamp
+      id: id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/lytics-api-v1-openapi.json#GET /api/event
+    - openapi/_original/lytics-api-v2-openapi.json#GET /event
+    - openapi/_original/lytics-api-v2-openapi.json#GET /event/{id}
+    - openapi/_original/lytics-api-v2-openapi.json#GET /stream/{name}/events
+  cohort:
+    path_segment:
+    - segment
+    properties:
+      id: id
+      name:
+      - name
+      - title
+      description: description
+      created_at: created
+      updated_at: updated
+      count: size
+      tags: tags
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/lytics-api-v1-openapi.json#DELETE /api/segment/{id}
+    - openapi/_original/lytics-api-v1-openapi.json#GET /api/content/recommend/segment/{segId}
+    - openapi/_original/lytics-api-v1-openapi.json#GET /api/segment
+    - openapi/_original/lytics-api-v1-openapi.json#GET /api/segment/{id}
+    - openapi/_original/lytics-api-v1-openapi.json#POST /api/segment

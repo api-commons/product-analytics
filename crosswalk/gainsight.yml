@@ -1,0 +1,28 @@
+provider: gainsight
+apis_io: https://apis.io/providers/gainsight/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    properties:
+      timestamp: timestamp
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/gainsight-cs-events-api-openapi.yml#POST /events
+    - openapi/_original/gainsight-cs-events-api-openapi.yml#POST /events/bulk
+  profile:
+    path_segment:
+    - person
+    - people
+    properties:
+      created_at: CreatedDate
+      name: Title
+      updated_at: ModifiedDate
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/gainsight-cs-person-api-openapi.yml#DELETE /data/objects/Person/{recordId}
+    - openapi/_original/gainsight-cs-person-api-openapi.yml#GET /data/objects/Person/{recordId}
+    - openapi/_original/gainsight-cs-person-api-openapi.yml#POST /data/objects/Person
+    - openapi/_original/gainsight-rest-api-openapi.yml#GET /v1/people

@@ -1,0 +1,51 @@
+provider: openpanel
+apis_io: https://apis.io/providers/openpanel/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    - event
+    - track
+    properties:
+      type: type
+      anonymous_id: deviceId
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/openpanel-openapi.yml#GET /export/events
+    - openapi/_original/openpanel-openapi.yml#GET /insights/{projectId}/events
+    - openapi/_original/openpanel-openapi.yml#POST /event/
+    - openapi/_original/openpanel-openapi.yml#POST /import/events
+    - openapi/_original/openpanel-openapi.yml#POST /track/
+  profile:
+    path_segment:
+    - profiles
+    - profile
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/openpanel-openapi.yml#GET /insights/{projectId}/profiles
+    - openapi/_original/openpanel-openapi.yml#GET /insights/{projectId}/profiles/{profileId}
+    - openapi/_original/openpanel-openapi.yml#POST /profile/
+  cohort:
+    path_segment:
+    - cohort
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/openpanel-openapi.yml#GET /insights/{projectId}/retention/cohort
+  dashboard:
+    path_segment:
+    - dashboards
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/openpanel-openapi.yml#GET /manage/projects/{projectId}/dashboards
+  funnel:
+    path_segment:
+    - funnel
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/openpanel-openapi.yml#GET /insights/{projectId}/funnel

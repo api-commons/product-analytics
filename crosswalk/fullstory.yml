@@ -1,0 +1,19 @@
+provider: fullstory
+apis_io: https://apis.io/providers/fullstory/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    - batch
+    properties:
+      user_id: user
+      properties: properties
+      timestamp: timestamp
+      id: id
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/fullstory-server-api-openapi.yml#POST /v2/events
+    - openapi/_original/fullstory-server-api-openapi.yml#POST /v2/events/batch

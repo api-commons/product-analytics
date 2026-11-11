@@ -1,0 +1,35 @@
+provider: google-analytics
+apis_io: https://apis.io/providers/google-analytics/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - collect
+    properties:
+      user_id: user_id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/google-analytics-measurement-protocol.yaml#POST /collect
+  profile:
+    path_segment:
+    - profiles
+    properties:
+      id: id
+      name: name
+      type: type
+      updated_at: updated
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/google-analytics-management-api-v3.yaml#DELETE /management/accounts/{accountId}/webproperties/{webPropertyId}/profiles/{profileId}
+    - openapi/_original/google-analytics-management-api-v3.yaml#GET /management/accounts/{accountId}/webproperties/{webPropertyId}/profiles
+    - openapi/_original/google-analytics-management-api-v3.yaml#GET /management/accounts/{accountId}/webproperties/{webPropertyId}/profiles/{profileId}
+    - openapi/_original/google-analytics-management-api-v3.yaml#PATCH /management/accounts/{accountId}/webproperties/{webPropertyId}/profiles/{profileId}
+    - openapi/_original/google-analytics-management-api-v3.yaml#POST /management/accounts/{accountId}/webproperties/{webPropertyId}/profiles
+  cohort:
+    path_segment:
+    - segments
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/google-analytics-management-api-v3.yaml#GET /management/segments

@@ -1,0 +1,24 @@
+provider: heap
+apis_io: https://apis.io/providers/heap/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - track
+    properties:
+      user_id: user_id
+      properties: properties
+      timestamp: timestamp
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/heap-openapi.yml#POST /api/track
+  profile:
+    path_segment:
+    - identify
+    properties:
+      user_id: user_id
+      timestamp: timestamp
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/heap-openapi.yml#POST /api/v1/identify

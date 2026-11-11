@@ -1,0 +1,22 @@
+provider: mapp
+apis_io: https://apis.io/providers/mapp/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mapp-engage-openapi.yml#GET /auditlog/events
+  cohort:
+    path_segment:
+    - segments
+    properties:
+      id: id
+      name: title
+      description: description
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/mapp-intelligence-analytics-openapi.yml#GET /segments

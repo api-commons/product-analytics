@@ -1,0 +1,37 @@
+provider: zaius
+apis_io: https://apis.io/providers/zaius/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    properties:
+      timestamp: ts
+      type: type
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/zaius-events-openapi.json#POST /events
+    - openapi/_original/zaius-orders-openapi.json#POST /events
+  profile:
+    path_segment:
+    - profiles
+    properties:
+      traits: attributes
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/zaius-customers-openapi.json#GET /profiles
+    - openapi/_original/zaius-customers-openapi.json#POST /profiles
+  cohort:
+    path_segment:
+    - segments
+    properties:
+      description: description
+      filters: definition
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/zaius-realtimesegments-openapi.json#DELETE /segments/{segment_id}
+    - openapi/_original/zaius-realtimesegments-openapi.json#GET /segments
+    - openapi/_original/zaius-realtimesegments-openapi.json#GET /segments/{segment_id}
+    - openapi/_original/zaius-realtimesegments-openapi.json#POST /segments/{segment_id}
+    - openapi/_original/zaius-realtimesegments-openapi.json#PUT /segments/{segment_id}

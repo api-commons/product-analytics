@@ -1,0 +1,23 @@
+provider: pendoio
+apis_io: https://apis.io/providers/pendoio/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - track
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/pendoio-engage-openapi.yml#POST /data/track
+  cohort:
+    path_segment:
+    - segment
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/pendoio-engage-openapi.yml#DELETE /api/v1/segment/{segmentId}
+    - openapi/_original/pendoio-engage-openapi.yml#GET /api/v1/segment
+    - openapi/_original/pendoio-engage-openapi.yml#GET /api/v1/segment/{id}
+    - openapi/_original/pendoio-engage-openapi.yml#PUT /api/v1/guide/{guideId}/segment
+    - openapi/_original/pendoio-engage-openapi.yml#PUT /api/v1/segment/{segmentId}

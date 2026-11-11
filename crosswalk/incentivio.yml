@@ -1,0 +1,26 @@
+provider: incentivio
+apis_io: https://apis.io/providers/incentivio/
+context: product-analytics
+generated: '2026-11-10'
+concepts:
+  event:
+    path_segment:
+    - events
+    properties:
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-client-domain/templates/events/{event}
+    - openapi/_original/incentivio-admin-api-openapi.yml#GET /incentivio-client-domain/templates/events/{event}
+  cohort:
+    path_segment:
+    - segments
+    properties:
+      created_at: createdDate
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/incentivio-admin-api-openapi.json#DELETE /incentivio-auto-tagger-service/segments/{segmentId}
+    - openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-auto-tagger-service/segments
+    - openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-auto-tagger-service/segments/{segmentId}
+    - openapi/_original/incentivio-admin-api-openapi.json#POST /incentivio-auto-tagger-service/segments
+    - openapi/_original/incentivio-admin-api-openapi.json#PUT /incentivio-auto-tagger-service/segments/{segmentId}

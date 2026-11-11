@@ -1,0 +1,348 @@
+openapi: 3.1.0
+info:
+  title: Product Analytics (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Product Analytics interface, distilled from the harvested OpenAPI of 80 providers in
+    the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /events:
+    post:
+      operationId: createEvent
+      summary: Create an event
+      tags:
+      - Events
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id001
+                $ref: '#/components/schemas/Event'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+    get:
+      operationId: listEvents
+      summary: List events
+      tags:
+      - Events
+      x-commons-tier: extended
+      x-commons-share: 0.4
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id001
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /events/{event_id}:
+    parameters:
+    - $ref: '#/components/parameters/event_id'
+    get:
+      operationId: getEvent
+      summary: Get an event
+      tags:
+      - Events
+      x-commons-tier: extended
+      x-commons-share: 0.25
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+  /profiles:
+    post:
+      operationId: createProfile
+      summary: Create a profile
+      tags:
+      - Profiles
+      x-commons-tier: core
+      x-commons-share: 0.867
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id002
+                $ref: '#/components/schemas/Profile'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+    get:
+      operationId: listProfiles
+      summary: List profiles
+      tags:
+      - Profiles
+      x-commons-tier: extended
+      x-commons-share: 0.4
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id002
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /profiles/{profile_id}:
+    parameters:
+    - $ref: '#/components/parameters/profile_id'
+    get:
+      operationId: getProfile
+      summary: Get a profile
+      tags:
+      - Profiles
+      x-commons-tier: extended
+      x-commons-share: 0.4
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    delete:
+      operationId: deleteProfile
+      summary: Delete a profile
+      tags:
+      - Profiles
+      x-commons-tier: extended
+      x-commons-share: 0.267
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+  /cohorts:
+    get:
+      operationId: listCohorts
+      summary: List cohorts
+      tags:
+      - Cohorts
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Cohort'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createCohort
+      summary: Create a cohort
+      tags:
+      - Cohorts
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /cohorts/{cohort_id}:
+    parameters:
+    - $ref: '#/components/parameters/cohort_id'
+    get:
+      operationId: getCohort
+      summary: Get a cohort
+      tags:
+      - Cohorts
+      x-commons-tier: core
+      x-commons-share: 0.714
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    delete:
+      operationId: deleteCohort
+      summary: Delete a cohort
+      tags:
+      - Cohorts
+      x-commons-tier: core
+      x-commons-share: 0.643
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateCohort
+      summary: Update a cohort
+      tags:
+      - Cohorts
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /dashboards:
+    get:
+      operationId: listDashboards
+      summary: List dashboards
+      tags:
+      - Dashboards
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Dashboard'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /funnels:
+    get:
+      operationId: listFunnels
+      summary: List funnels
+      tags:
+      - Funnels
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/Funnel'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createFunnel
+      summary: Create a funnel
+      tags:
+      - Funnels
+      x-commons-tier: extended
+      x-commons-share: 0.429
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+components:
+  schemas:
+    Event:
+      $ref: ./schema/event.json
+    Profile:
+      $ref: ./schema/profile.json
+    Cohort:
+      $ref: ./schema/cohort.json
+    Dashboard:
+      $ref: ./schema/dashboard.json
+    Funnel:
+      $ref: ./schema/funnel.json
+  parameters:
+    event_id:
+      name: event_id
+      in: path
+      required: true
+      schema:
+        type: string
+    profile_id:
+      name: profile_id
+      in: path
+      required: true
+      schema:
+        type: string
+    cohort_id:
+      name: cohort_id
+      in: path
+      required: true
+      schema:
+        type: string
+    dashboard_id:
+      name: dashboard_id
+      in: path
+      required: true
+      schema:
+        type: string
+    funnel_id:
+      name: funnel_id
+      in: path
+      required: true
+      schema:
+        type: string

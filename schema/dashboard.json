@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/product-analytics/main/schema/dashboard.json",
+  "title": "Dashboard",
+  "description": "The common dashboard in Product Analytics, distilled from 3 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "id",
+        "_id"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "name"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "product-analytics",
+    "concept": "dashboard",
+    "providers": 3,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}
